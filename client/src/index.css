@@ -3,15 +3,13 @@
 
 @plugin "tailwindcss-animate";
 
-/* Core Colors - Matched to Aliucord Logo #00C853 and #33FF88 */
 :root {
-  --primary: 145 100% 39%; /* #00C853 (primary green) */
+  --primary: 145 100% 39%; 
   --primary-foreground: 145 100% 98%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
   --radius: 1rem;
-  
-  /* DARK colors - Sophisticated green-tinted charcoal */
+
   --background: 145 15% 7%;
   --foreground: 145 10% 94%;
   --card: 145 12% 10%;
@@ -23,13 +21,12 @@
   --muted: 145 15% 14%;
   --muted-foreground: 145 10% 60%;
   --accent: 145 30% 18%;
-  --accent-foreground: 145 100% 60%; /* Closer to #33FF88 */
+  --accent-foreground: 145 100% 60%; 
   --border: 145 20% 20%;
   --input: 145 15% 12%;
   --ring: 145 100% 39%;
 }
 
-/* Light Mode Overrides */
 .light {
   --background: 145 30% 98%;
   --foreground: 145 50% 5%;
