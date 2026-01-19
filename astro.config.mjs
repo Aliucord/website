@@ -16,10 +16,5 @@ export default defineConfig({
         '@assets': path.resolve('./public/assets'),
       }
     }
-  },
-  server: {
-    host: '0.0.0.0',
-    port: 5000
-  },
-  outDir: '../static'
+  }
 });
