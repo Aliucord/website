@@ -56,8 +56,7 @@ export const FAQ_ITEMS = [
   },
   {
     question: "Is it safe to use?",
-    answer: "Aliucord is fully open source. You can audit the code yourself on GitHub. We prioritize user privacy and safety above all else."
-  }
+    answer: "Aliucord is fully open source. You can look at the code on Github."
 ];
 
 export const STATS = [
