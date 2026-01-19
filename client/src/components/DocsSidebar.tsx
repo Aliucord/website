@@ -84,7 +84,6 @@ export default function DocsSidebar({ sections, activeTab }: DocsSidebarProps) {
       try {
         range.surroundContents(mark);
       } catch (e) {
-        // Handle case where range spans multiple elements
       }
     });
 

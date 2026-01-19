@@ -22,7 +22,7 @@ export const FEATURES = [
   {
     icon: Shield,
     title: "Privacy First",
-    description: "Aliucord has a built-in NoTrack core plugin to reduce the tracking/telemetry of discord itself to the maximum possible. Removing all tracking is not possible as it would be dangerous.",
+    description: "Aliucord has a built-in NoTrack core plugin to reduce the tracking/telemetry of Discord to the maximum possible. Removing all tracking is not possible as some level of data is still required in order for Discord to function.",
   },
   {
     icon: Smartphone,
@@ -44,7 +44,7 @@ export const FEATURES = [
 export const FAQ_ITEMS = [
   {
     question: "Is tracking & telemetry disabled?",
-    answer: "Yes, Aliucord has a built-in NoTrack core plugin to reduce the tracking/telemetry of Discord itself to the maximum possible. While removing all tracking is not possible for safety reasons, Aliucord does not add any trackers of its own."
+    answer: "Yes, Aliucord has a built-in NoTrack core plugin to reduce the tracking/telemetry of Discord itself to the maximum possible. Removing all tracking is not possible as some level of data is still required in order for Discord to function."
   },
   {
     question: "Will I get banned for using Aliucord?",
