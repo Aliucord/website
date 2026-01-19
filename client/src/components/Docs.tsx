@@ -41,7 +41,7 @@ export default function Docs() {
   }, []);
 
   const docSections = activeTab === "plugins" ? PLUGIN_DOCS : activeTab === "themes" ? THEME_DOCS : GENERAL_DOCS;
-  const title = activeTab === "plugins" ? "Plugin Development" : activeTab === "themes" ? "Theme Development" : "General Documentation";
+  const title = activeTab === "plugins" ? "Plugin Development" : activeTab === "themes" ? "Theme Development" : "Guides";
   const description = activeTab === "plugins"
     ? "Learn how to develop plugins for Aliucord with our comprehensive guides covering everything from prerequisites to reflection."
     : activeTab === "themes"
@@ -66,7 +66,7 @@ export default function Docs() {
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                Plugins
+                Plugin Dev
               </button>
               <button
                 onClick={() => setActiveTab("themes")}
@@ -76,7 +76,7 @@ export default function Docs() {
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                Themes
+                Theme Dev
               </button>
               <button
                 onClick={() => setActiveTab("general")}

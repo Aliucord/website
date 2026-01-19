@@ -23,7 +23,7 @@ export function Footer() {
             <h4 className="font-black text-sm tracking-widest mb-8 text-primary/80">Resources</h4>
             <ul className="space-y-4 text-center md:text-left">
               <li>
-                <a href="https://github.com/Aliucord/Aliucord/wiki" target="_blank" rel="noreferrer" className="text-lg font-bold text-muted-foreground hover:text-primary transition-colors">Documentation</a>
+                <a href="https://github.com/Aliucord/documentation" target="_blank" rel="noreferrer" className="text-lg font-bold text-muted-foreground hover:text-primary transition-colors">Documentation</a>
               </li>
               <li>
                 <a href="https://github.com/Aliucord/Aliucord" target="_blank" rel="noreferrer" className="text-lg font-bold text-muted-foreground hover:text-primary transition-colors">GitHub</a>

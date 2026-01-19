@@ -20,7 +20,6 @@ export function Navbar() {
       <div className="container mx-auto px-4 h-18 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <AliucordLogo className="w-9 h-9 text-primary group-hover:scale-110 transition-transform" animated />
-          <span className="font-bold text-2xl tracking-tight hidden sm:block">Aliucord</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -50,19 +49,6 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <div className="hidden md:flex items-center gap-2">
-            <Button variant="ghost" size="icon" asChild className="rounded-full hover:bg-primary/10">
-              <a href="https://github.com/Aliucord/Aliucord" target="_blank" rel="noreferrer">
-                <Github className="w-5 h-5" />
-              </a>
-            </Button>
-            <Button asChild className="rounded-full bg-primary text-primary-foreground hover:opacity-90 font-bold px-6 border-2 border-primary/20 shadow-lg shadow-primary/10">
-              <a href="https://github.com/Aliucord/AliucordManager/releases/latest" target="_blank" rel="noreferrer">
-                Manager
-              </a>
-            </Button>
-          </div>
-
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon" className="rounded-full">
@@ -84,12 +70,6 @@ export function Navbar() {
                     </Link>
                   )
                 ))}
-                <div className="h-0.5 bg-border my-4" />
-                <Button asChild className="w-full rounded-full bg-primary py-6 text-lg font-bold">
-                  <a href="https://github.com/Aliucord/AliucordManager/releases/latest" target="_blank" rel="noreferrer">
-                    Download Manager
-                  </a>
-                </Button>
               </div>
             </SheetContent>
           </Sheet>
