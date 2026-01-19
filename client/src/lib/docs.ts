@@ -894,11 +894,10 @@ We decided to keep all development on the good old 126.21 version of Discord, wh
 Source: [GitHub](https://github.com/Aliucord/AliucordRN#-notice-)
 4. If Aliucord ceases to exist, there wouldn't be any active clients using the good old Discord version.
 
-<blockquote class="warning">
-<strong>Warning: Bluecord</strong><br>
+<p>warning:
 Bluecord is also a modded client for the old version of Discord, but the main developer is not a good person, so we don't recommend using it.<br>
-Source: <a href="https://drive.google.com/drive/mobile/folders/1Y2m2lMSpN3GlOcXyceaO88Ljnr8xuNcp">Google Drive</a>
-</blockquote>
+Source: <a href="https://drive.google.com/drive/mobile/folders/1Y2m2lMSpN3GlOcXyceaO88Ljnr8xuNcp">Google Drive</a></p>
+
 5. Features from new Discord versions can be backported to the old one.
 What does backporting mean?
 Backporting is the process of porting a software update that was developed for a relatively current version of a software entity, to an older version of the software.
