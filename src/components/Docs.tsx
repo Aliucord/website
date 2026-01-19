@@ -59,6 +59,16 @@ export default function Docs() {
           <div className="flex justify-center mb-8">
             <div className="inline-flex rounded-lg p-1 bg-card/80 backdrop-blur-md border border-border">
               <button
+                onClick={() => setActiveTab("general")}
+                className={`px-6 py-2 rounded-md text-sm font-medium transition-all ${
+                  activeTab === "general"
+                    ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                Guides
+              </button>
+              <button
                 onClick={() => setActiveTab("plugins")}
                 className={`px-6 py-2 rounded-md text-sm font-medium transition-all ${
                   activeTab === "plugins"
@@ -77,16 +87,6 @@ export default function Docs() {
                 }`}
               >
                 Theme Dev
-              </button>
-              <button
-                onClick={() => setActiveTab("general")}
-                className={`px-6 py-2 rounded-md text-sm font-medium transition-all ${
-                  activeTab === "general"
-                    ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                Guides
               </button>
             </div>
           </div>
@@ -135,6 +135,12 @@ export default function Docs() {
                       ),
                       li: ({ node, ...props }) => (
                         <li className="text-muted-foreground" {...props} />
+                      ),
+                      a: ({ node, ...props }) => (
+                        <a 
+                          className="text-primary hover:text-primary/80 underline underline-offset-4 decoration-primary/40 hover:decoration-primary font-medium transition-all bg-primary/10 px-1 rounded" 
+                          {...props} 
+                        />
                       ),
                       code: ({ node, inline, ...props }: any) =>
                         inline ? (
