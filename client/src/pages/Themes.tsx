@@ -30,10 +30,10 @@ export default function Themes() {
             Themes
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Personalize your Aliucord experience with custom themes.
+            Browse Aliucord themes.
             <span className="block mt-4 p-4 bg-primary/5 border border-primary/20 rounded-2xl text-primary font-medium">
               This page is <strong>view-only</strong>. To install themes, you must use 
-              <strong> Aliucord</strong> to install using the <strong>#themes</strong> channel on our Discord server.
+              <strong> Aliucord</strong> to install with the <strong>#themes</strong> channel on our Discord server.
             </span>
           </p>
         </div>
