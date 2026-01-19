@@ -653,10 +653,10 @@ export const GENERAL_DOCS: DocSection[] = [
   {
     title: "Backports",
     content: `# What features have been backported to Aliucord?
-:::tip Legend
+
+**Legend**
 - 💣: Broken or partially broken
 - 🚧: Still in development or beta
-  :::
 
 **Note:** To install the plugins from here you need to click the plugin name, it will download the plugin .zip, now just move it to the \`Aliucord/plugins\` folder using a file manager & restart Aliucord in case it was open.
 
@@ -710,11 +710,8 @@ export const GENERAL_DOCS: DocSection[] = [
 
 ## Aliucord from storage
 
-:::tip
-
-- This method is used for core features that are not merged yet, this means that they are still in an Alpha state, use at your own risk.
-- You can't use multiple .ZIPs at once, you'll need to decide which features you prefer.
-  :::
+**This method is used for core features that are not merged yet, this means that they are still in an Alpha state, use at your own risk.**
+**You can't use multiple .ZIPs at once, you'll need to decide which features you prefer.**
   **How to use Aliucord from storage**
 
 - Download the \`.zip\` file from the links below
@@ -749,11 +746,9 @@ You can also watch the [video instructions](https://github.com/user-attachments/
 4. Click on the first option ("Open Plugin Downloader")
 5. Click on any of the plugins shown in the Plugin Downloader to install them
 
-:::tip Tips
-
+**Tips:**
 - Most plugins need an app restart to work properly.
 - The PluginWeb plugin is recommended if you want a built-in plugin list.
-  :::
 
 ## How to install themes
 
@@ -763,19 +758,15 @@ You can also watch the [video instructions](https://github.com/user-attachments/
 4. Go to [#themes](https://discord.com/channels/811255666990907402/824357609778708580) channel and hold any message (NOT THE LINK)
 5. Click on the first option ("Install [theme name]")
 
-:::tip Tips
-
+**Tips:**
 - After installing a theme you should go to Themer settings to enable it.
 - Themes require an app restart to work properly.
 - [Additional info about Themer plugin](/themer/)
-  :::
 
 ## How to install plugins manually
 
 Required for [#unmaintained-plugins](https://discord.com/channels/811255666990907402/861935147272110100) channel
-:::tip
 If you already have the plugin .zip, just follow two last steps.
-:::
 
 1. Go to any plugin repository ([like this one](https://github.com/Juby210/Aliucord-plugins))
 2. Click the branch button and select \`builds\`
