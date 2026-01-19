@@ -22,7 +22,7 @@ export const FEATURES = [
   {
     icon: Shield,
     title: "Privacy First",
-    description: "Aliucord has a built-in NoTrack core plugin to reduce the tracking/telemetry of discord itself to the maximum possible. Removing all tracking is not possible as it would be dangerous.",
+    description: "Aliucord has a built-in NoTrack core plugin to reduce the tracking/telemetry of discord itself to the maximum possible. Removing all tracking is not possible as some level of data is still required in order for Discord to function.",
   },
   {
     icon: Smartphone,
