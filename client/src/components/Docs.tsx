@@ -5,6 +5,8 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import DocsSidebar from "./DocsSidebar";
 import { PLUGIN_DOCS, THEME_DOCS, GENERAL_DOCS } from "../lib/docs";
+import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
+import { AlertTriangle } from "lucide-react";
 
 export default function Docs() {
   const [activeTab, setActiveTab] = useState<"plugins" | "themes" | "general">("plugins");
@@ -113,7 +115,7 @@ export default function Docs() {
                   <ReactMarkdown
                     remarkPlugins={[remarkGfm]}
                     rehypePlugins={[rehypeRaw]}
-                    components={{
+                    components={ {
                       h1: ({ node, ...props }) => (
                         <h1 className="text-3xl font-bold mt-6 mb-4 text-foreground" {...props} />
                       ),
@@ -122,9 +124,6 @@ export default function Docs() {
                       ),
                       h3: ({ node, ...props }) => (
                         <h3 className="text-xl font-bold mt-4 mb-2 text-foreground" {...props} />
-                      ),
-                      p: ({ node, ...props }) => (
-                        <p className="mb-3 leading-relaxed" {...props} />
                       ),
                       ul: ({ node, ...props }) => (
                         <ul className="list-disc list-inside mb-3 space-y-1" {...props} />
@@ -147,6 +146,35 @@ export default function Docs() {
                       blockquote: ({ node, ...props }) => (
                         <blockquote className="border-l-4 border-primary pl-4 italic my-3 text-muted-foreground" {...props} />
                       ),
+                      p: ({ node, children, ...props }) => {
+                        const childrenArray = React.Children.toArray(children);
+                        const content = childrenArray.map(child => {
+                          if (typeof child === "string") return child;
+                          return "";
+                        }).join("");
+
+                        if ((activeTab === "general" || activeTab === "themes") && /warning/i.test(content)) {
+                          // Remove the leading "warning:" text from the content display if possible
+                          // or just rely on the AlertTitle
+                          const displayChildren = React.Children.map(children, (child) => {
+                            if (typeof child === "string") {
+                              return child.replace(/^warning:\s*/i, "");
+                            }
+                            return child;
+                          });
+
+                          return (
+                            <Alert className="my-4 bg-amber-500/10 border-amber-500/50 text-amber-600 dark:text-amber-400">
+                              <AlertTriangle className="h-4 w-4" />
+                              <AlertTitle>Warning</AlertTitle>
+                              <AlertDescription>
+                                {displayChildren}
+                              </AlertDescription>
+                            </Alert>
+                          );
+                        }
+                        return <p className="mb-3 leading-relaxed" {...props}>{children}</p>;
+                      },
                       table: ({ node, ...props }) => (
                         <div className="overflow-x-auto mb-3">
                           <table className="min-w-full border-collapse border border-border" {...props} />
@@ -167,7 +195,7 @@ export default function Docs() {
                       td:({ node, ...props }) => (
                         <td className="border border-border px-4 py-2 text-muted-foreground min-w-[150px]" {...props} />
                       ),
-                    }}
+                    } }
                   >
                     {section.content}
                   </ReactMarkdown>
