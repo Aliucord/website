@@ -43,7 +43,7 @@ export const FEATURES = [
 
 export const FAQ_ITEMS = [
   {
-    question: "Is tracking & telemetry disabled?",
+    question: "Is tracking and telemetry disabled?",
     answer: "Yes, Aliucord has a built-in NoTrack core plugin to reduce the tracking/telemetry of Discord itself to the maximum possible. Removing all tracking is not possible as some level of data is still required in order for Discord to function."
   },
   {
