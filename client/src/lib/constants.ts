@@ -27,7 +27,7 @@ export const FEATURES = [
   {
     icon: Smartphone,
     title: "Android Native",
-    description: "Optimized to ensure a snappy interface and better battery life on your Android device.",
+    description: "Optimized for better performance and battery life on your Android device.",
   },
   {
     icon: Code2,
