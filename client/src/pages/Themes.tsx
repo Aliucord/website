@@ -33,7 +33,7 @@ export default function Themes() {
             Personalize your Aliucord experience with custom themes.
             <span className="block mt-4 p-4 bg-primary/5 border border-primary/20 rounded-2xl text-primary font-medium">
               This page is <strong>view-only</strong>. To install themes, you must use 
-              <strong> Aliucord</strong> via the <strong>#themes</strong> channel.
+              <strong> Aliucord</strong> to install using the <strong>#themes</strong> channel on our Discord server.
             </span>
           </p>
         </div>
