@@ -32,7 +32,7 @@ export default function Plugins() {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Browse Aliucord plugins. 
             <span className="block mt-4 p-4 bg-primary/5 border border-primary/20 rounded-2xl text-primary font-medium">
-              This page is <strong>view-only</strong>. To get plugins, you must use 
+              This page is <strong>view-only</strong>. To get plugins, you must use  
               <strong>Aliucord</strong> to install with the <strong>#plugins-list</strong> channel or <strong>lumi</strong> bot on our Discord server.
             </span>
           </p>
