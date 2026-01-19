@@ -9,7 +9,7 @@ import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { AlertTriangle } from "lucide-react";
 
 export default function Docs() {
-  const [activeTab, setActiveTab] = useState<"plugins" | "themes" | "general">("plugins");
+  const [activeTab, setActiveTab] = useState<"plugins" | "themes" | "general">("general");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -108,9 +108,11 @@ export default function Docs() {
                     </h1>
                   </div>
                 )}
-                <h2 className="text-2xl font-bold mb-4 text-foreground">
-                  {section.title}
-                </h2>
+                {section.title !== title && (
+                  <h2 className="text-2xl font-bold mb-4 text-foreground">
+                    {section.title}
+                  </h2>
+                )}
                 <div className="prose dark:prose-invert max-w-none text-muted-foreground">
                   <ReactMarkdown
                     remarkPlugins={[remarkGfm]}
