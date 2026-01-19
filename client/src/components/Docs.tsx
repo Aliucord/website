@@ -41,10 +41,10 @@ export default function Docs() {
   const docSections = activeTab === "plugins" ? PLUGIN_DOCS : activeTab === "themes" ? THEME_DOCS : GENERAL_DOCS;
   const title = activeTab === "plugins" ? "Plugin Development" : activeTab === "themes" ? "Theme Development" : "General Documentation";
   const description = activeTab === "plugins"
-    ? "Learn how to develop plugins for Aliucord with our comprehensive guides covering everything from prerequisites to reflection."
+    ? "Learn how to develop plugins for Aliucord."
     : activeTab === "themes"
-      ? "Create beautiful themes for Aliucord. Customize every color and element of the Discord UI."
-      : "General guides, interface information, backports, and changelogs.";
+      ? "Create themes for Aliucord."
+      : "General information.";
 
   useEffect(() => {
     window.scrollTo(0, 0);
