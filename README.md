@@ -1,5 +1,5 @@
 <div align="center">
-    <img src=".github/assets/aliucord.svg" alt="Aliucord Logo" width="200" />
+    <img src="client/src/public/aliucord.svg" alt="Aliucord Logo" width="200" />
     <h1>Aliucord</h1>
     <p>Repository for the Aliucord website.</p>
 
