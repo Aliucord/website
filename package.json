@@ -4,10 +4,9 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev:client": "vite dev --port 5000",
-    "dev": "NODE_ENV=development tsx server/index.ts",
+    "dev": "vite dev --port 5000",
     "build": "astro build",
-    "start": "NODE_ENV=production node dist/index.cjs",
+    "preview": "astro preview",
     "check": "tsc"
   },
   "dependencies": {
@@ -48,7 +47,6 @@
     "cmdk": "^1.1.1",
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.6.0",
-    "express": "^4.21.2",
     "framer-motion": "^12.23.24",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.545.0",
@@ -77,7 +75,6 @@
     "@replit/vite-plugin-dev-banner": "^0.1.1",
     "@replit/vite-plugin-runtime-error-modal": "^0.0.4",
     "@tailwindcss/vite": "^4.1.14",
-    "@types/express": "4.17.21",
     "@types/node": "^20.19.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
