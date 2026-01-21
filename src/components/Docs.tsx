@@ -159,7 +159,7 @@ export default function Docs() {
                       ),
                       code: ({ node, inline, ...props }: any) =>
                         inline ? (
-                          <code className="bg-secondary/50 border border-border rounded px-2 py-0.5 font-mono text-sm text-primary dark:text-emerald-400 align-middle" {...props} />
+                          <code className="bg-secondary/50 border border-border rounded px-2 py-0.5 font-mono text-sm text-primary dark:text-emerald-400 inline" {...props} />
                         ) : (
                           <code className="font-mono text-sm text-primary dark:text-emerald-400 block whitespace-pre-wrap" {...props} />
                         ),
