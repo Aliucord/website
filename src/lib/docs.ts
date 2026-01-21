@@ -244,7 +244,7 @@ Source: <a href="https://drive.google.com/drive/mobile/folders/1Y2m2lMSpN3GlOcXy
   },
   {
     title: "Sounds",
-    content: `GitHub:
+    content: `**GitHub:**
   - Create a GitHub account
   - Create a repo (make sure it's public)
   - Click add file and upload the sound
@@ -252,7 +252,7 @@ Source: <a href="https://drive.google.com/drive/mobile/folders/1Y2m2lMSpN3GlOcXy
   - Hold View raw and copy the address
   - Paste the link into the plugin
 
-Locally:
+**Locally:**
   - Install [this file manager](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) & open it (or any file manager that lets you copy file paths)
   - Find the sound file
   - Click the 3 dots next to it & press Copy Path
@@ -272,7 +272,7 @@ Final result should be file:///storage/emulated/0/Example/Example.mp3`
 
 First of all, you need to enable transparency in Themer settings (chat, chat & settings). If you want full transparency, you need to use the template found below.
 
-GitHub:
+**GitHub:**
   - Create a GitHub account
   - Create a repo (make sure it's public)
   - Click Add file and upload the image/gif
@@ -280,7 +280,7 @@ GitHub:
   - Hold the image and copy the address
   - Go to Themer settings → your theme → Background & paste it
 
-Locally:
+**Locally:**
   - Install [this file manager](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) & open it (or any file manager that lets you copy file paths)
   - Find the image/gif file
   - Click the 3 dots next to it & press Copy path
@@ -295,7 +295,7 @@ GitLab, Imgbb & Imgur also work.
 
 First of all, you need to enable the Enable Custom Fonts option in Themer settings.
 
-- GitHub:
+**GitHub:**
   - Create a GitHub account
   - Create a repo (make sure it's public)
   - Click Add file and upload the font
@@ -303,7 +303,8 @@ First of all, you need to enable the Enable Custom Fonts option in Themer settin
   - Hold View raw and copy the address
   - Go to Themer settings → your theme → Fonts & paste it where the asterisk is
     If the font you want is already uploaded in some repo, you can just copy the raw link, no need to make your own repo.
-- Locally:
+
+**Locally:**
   - Install [this file manager](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) & open it (or any file manager that lets you copy file paths)
   - Find the font file
   - Click the 3 dots next to it & press Copy path
