@@ -147,10 +147,12 @@ export default function DocsSidebar({ sections, activeTab }: DocsSidebarProps) {
     }
   };
 
-  const handleNavigate = (index: number) => {
-    const element = document.getElementById(`doc-section-${index}`);
+  const handleNavigate = (index: number, title: string) => {
+    const sectionId = title.toLowerCase().replace(/\s+/g, "-");
+    const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
+      window.history.pushState(null, "", `#${sectionId}`);
       setIsOpen(false);
     }
   };
@@ -173,7 +175,7 @@ export default function DocsSidebar({ sections, activeTab }: DocsSidebarProps) {
                   {sections.map((section, index) => (
                     <button
                       key={index}
-                      onClick={() => handleNavigate(index)}
+                      onClick={() => handleNavigate(index, section.title)}
                       className="w-full text-left px-3 py-2 rounded transition-colors text-sm hover:bg-secondary text-muted-foreground"
                     >
                       {section.title}
