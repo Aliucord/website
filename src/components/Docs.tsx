@@ -223,8 +223,9 @@ export default function Docs() {
                     {section.content}
                   </ReactMarkdown>
                 </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
