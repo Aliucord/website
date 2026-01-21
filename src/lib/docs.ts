@@ -107,8 +107,8 @@ You can also watch the [video instructions](https://github.com/user-attachments/
 1. Join the [Aliucord Discord server](https://discord.gg/EsNDvBaHVU)
 2. Make sure you are using the Aliucord app
 3. Go to [#plugins-list](https://discord.com/channels/811255666990907402/811275162715553823) or [#new-plugins](https://discord.com/channels/811255666990907402/845784407846813696) channels and hold any message (NOT THE LINK)
-4. Click on the first option ("Open Plugin Downloader")
-5. Click on any of the plugins shown in the Plugin Downloader to install them
+4. Click on the first option ("Open Plugin Downloader" for #plugins-list and "Install [plugin name]" for #new-plugins)
+5. Click on any of the plugins shown in the Plugin Downloader to install them (or "Install [plugin name]")
 
 **Tips:**
 - Most plugins need an app restart to work properly.
@@ -125,7 +125,6 @@ You can also watch the [video instructions](https://github.com/user-attachments/
 **Tips:**
 - After installing a theme you should go to Themer settings to enable it.
 - Themes require an app restart to work properly.
-- [Additional info about Themer plugin](/themer/)
 
 ## How to install plugins manually
 
@@ -200,8 +199,6 @@ If you already have the plugin .zip, just follow two last steps.
 
 - FakeStickers fork by Archimedes (renamed to BetterFakeStickers) fixes not being able to reply with stickers.
 
-- UITH fork by Serinova & DeafThing (renamed to CatUITH) focuses on [Catbox](https://catbox.moe) & [Litterbox](https://litterbox.catbox.moe) services and adds more options.
-
 - Ip fork by Serinova fixes the /ip command.
 
 - SendEmbeds fork by Serinova makes the /embed command work again by using directwebhook (original API died).`
@@ -231,7 +228,7 @@ If you already have the plugin .zip, just follow two last steps.
 |Adding friends|Adding friends from the "Add friend" page
 |Message requests|Message requests
 
-For a list of backported features, see the [Backports](https://aliucord.vercel.app/backports/) page.`
+For a list of backported features, see the [Backports](https://aliucord.pages.dev/documentation#backports) page.`
   },
   {
     title: "New UI",
@@ -243,31 +240,25 @@ Alternatively, you can search for another modified Discord client that uses the 
     title: "Old UI",
     content: `1. React Native is very slow compared to Kotlin. RN is a framework for building apps using JavaScript, which is not as performant as Kotlin code. Discord's React Native version is known to have performance issues, especially on lower-end devices, because the app has been ported from iOS over to Android.
 2. Everything would need to be rewritten, wasting time, considering how bad the new Discord version is.
-3. Aliucord developers don't like to work with the new one.
-Notice from the AliucordRN repository
-We decided to keep all development on the good old 126.21 version of Discord, which is the last version of Discord that doesn't use React Native framework. It may lack of new features that Discord added in the past year, but we should be able to keep existing functionality and to add some new features. [...] Most of our developers just disliked working and using Discord React Native (its performance is really poor and is full of bugs, there are many reasons to just not like it). If you still want to use new Discord with mods, the best choice is Vendetta (made by different team, unaffiliated).
-Source: [GitHub](https://github.com/Aliucord/AliucordRN#-notice-)
+3. Aliucord developers don't like to work with the new one. [Notice from the AliucordRN repository](https://github.com/Aliucord/AliucordRN#-notice-)
 4. If Aliucord ceases to exist, there wouldn't be any active clients using the good old Discord version.
 
 <p>warning:
 Bluecord is also a modded client for the old version of Discord, but the main developer is not a good person, so we don't recommend using it.<br>
 Source: <a href="https://drive.google.com/drive/mobile/folders/1Y2m2lMSpN3GlOcXyceaO88Ljnr8xuNcp">Google Drive</a></p>
 
-5. Features from new Discord versions can be backported to the old one.
-What does backporting mean?
-Backporting is the process of porting a software update that was developed for a relatively current version of a software entity, to an older version of the software.
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Backporting)
-6. Modded clients for the new Discord version already exist, such as [Kettu](https://github.com/C0C0B01/KettuManager/releases/).`
+5. Features from new Discord versions can be backported to the old one. [What does backporting mean?](https://en.wikipedia.org/wiki/Backporting)
+6. Modded clients for the new Discord version already exist, such as [Kettu](https://github.com/C0C0B01/KettuManager/releases).`
   },
   {
     title: "Sounds",
     content: `- GitHub:
   - Create a GitHub account
-  - Create a repo (make sure its public)
+  - Create a repo (make sure it's public)
   - Click add file and upload the sound
   - Once uploaded, click its name
   - Hold View raw and copy the address
-  - Paste the link(s) into the plugin
+  - Paste the link into the plugin
 - Locally:
   - Install [this file manager](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) & open it (or any file manager that lets you copy file paths)
   - Find the sound file
@@ -286,7 +277,7 @@ Final result should be file:///storage/emulated/0/Example/Example.mp3`
 
 ## How to set a custom background
 
-First of all, you need to enable transparency in Themer settings (chat, chat & settings). If you want full transparency, you need to use the [template](#how-to-make-the-background-work-with-full-transparency).
+First of all, you need to enable transparency in Themer settings (chat, chat & settings). If you want full transparency, you need to use the template found below.
 
 - GitHub:
 
@@ -355,7 +346,6 @@ GitLab also works.
 - Read #avatar-rules before proceeding
 - Go to #request-here and use the /request command
 - Add the gif you want
-- You will get a ping whenever it has been added or rejected
 - When it's accepted go to the plugin settings and click "Redownload databases"
 - Restart Aliucord to see the changes
 
@@ -366,7 +356,7 @@ GitLab also works.
 - Use the /bg command in any channel that you can type in
 - Add the image/gif you want
 - Check #userbg-log to see if it has been accepted or not
-- Go to the plugin settings and click "Redownload databases"
+- When it's accepted, go to the plugin settings and click "Redownload databases"
 - Restart Aliucord to see the changes`
   }
 ];
