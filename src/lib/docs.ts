@@ -21,8 +21,8 @@ export const GENERAL_DOCS: DocSection[] = [
   {
     title: "Backports",
     content: `**Legend**
-- 💣: Broken or partially broken
-- 🚧: Still in development or beta
+💣: Broken or partially broken
+🚧: Still in development or beta
 
 **Note:** To install the plugins from here you need to click the plugin name, it will download the plugin .zip, now just move it to the Aliucord/plugins folder using a file manager & restart Aliucord in case it was open.
 
@@ -133,7 +133,7 @@ If you already have the plugin .zip, just follow two last steps.
 
 1. Go to any plugin repository ([like this one](https://github.com/Juby210/Aliucord-plugins))
 2. Click the branch button and select builds
-![branch selector](image.png)
+![branch selector](https://raw.githubusercontent.com/yutaplug/Aliucord/refs/heads/main/docs/beginner/image.png)
 3. Click the [PluginName].zip of the plugin you want
 4. Click Raw, View raw or the download button to download the .zip file
 5. Using a file manager ([we recommend Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) ([F-Droid](https://f-droid.org/packages/me.zhanghai.android.files/))) move the downloaded .zip to the Aliucord/plugins folder
@@ -189,19 +189,19 @@ If you already have the plugin .zip, just follow two last steps.
     title: "Forks",
     content: `The forks can be installed from [the documentation page](/documentation#forks).
 
-- AudioPlayer fork by Halkion fixes crashes and some bugs with audio files.
+AudioPlayer fork by Halkion fixes crashes and some bugs with audio files.
 
-- Waifuim, NekosLife forks by Serinova fix the commands being fully broken. Additionally, Serinova made a plugin called AnimeImageFetch containing NSFW since NekosLife doesnt contain NSFW anymore.
+Waifuim, NekosLife forks by Serinova fix the commands being fully broken. Additionally, Serinova made a plugin called AnimeImageFetch containing NSFW since NekosLife doesnt contain NSFW anymore.
 
-- CheckLinks fork by Serinova fixes the majority of the urls not being checked (VirusTotal changed its link structure).
+CheckLinks fork by Serinova fixes the majority of the urls not being checked (VirusTotal changed its link structure).
 
-- NitroSpoof fork by Kiwi makes the fake emojis look real just like on Vencord's FakeNitro plugin or Vendetta's (and their forks) Realmoji plugin. Also fixes a scrolling bug in emoji picker.
+NitroSpoof fork by Kiwi makes the fake emojis look real just like on Vencord's FakeNitro plugin or Vendetta's (and their forks) Realmoji plugin. Also fixes a scrolling bug in emoji picker.
 
-- FakeStickers fork by Archimedes (renamed to BetterFakeStickers) fixes not being able to reply with stickers.
+FakeStickers fork by Archimedes (renamed to BetterFakeStickers) fixes not being able to reply with stickers.
 
-- Ip fork by Serinova fixes the /ip command.
+Ip fork by Serinova fixes the /ip command.
 
-- SendEmbeds fork by Serinova makes the /embed command work again by using directwebhook (original API died).`
+SendEmbeds fork by Serinova makes the /embed command work again by using directwebhook (original API died).`
   },
   {
     title: "Missing Features",
@@ -239,8 +239,11 @@ Alternatively, you can search for another modified Discord client that uses the 
   {
     title: "Old UI",
     content: `1. React Native is very slow compared to Kotlin. RN is a framework for building apps using JavaScript, which is not as performant as Kotlin code. Discord's React Native version is known to have performance issues, especially on lower-end devices, because the app has been ported from iOS over to Android.
+    
 2. Everything would need to be rewritten, wasting time, considering how bad the new Discord version is.
+
 3. Aliucord developers don't like to work with the new one. [Notice from the AliucordRN repository](https://github.com/Aliucord/AliucordRN#-notice-)
+
 4. If Aliucord ceases to exist, there wouldn't be any active clients using the good old Discord version.
 
 <p>warning:
@@ -248,18 +251,19 @@ Bluecord is also a modded client for the old version of Discord, but the main de
 Source: <a href="https://drive.google.com/drive/mobile/folders/1Y2m2lMSpN3GlOcXyceaO88Ljnr8xuNcp">Google Drive</a></p>
 
 5. Features from new Discord versions can be backported to the old one. [What does backporting mean?](https://en.wikipedia.org/wiki/Backporting)
+
 6. Modded clients for the new Discord version already exist, such as [Kettu](https://github.com/C0C0B01/KettuManager/releases).`
   },
   {
     title: "Sounds",
-    content: `- GitHub:
+    content: `GitHub:
   - Create a GitHub account
   - Create a repo (make sure it's public)
   - Click add file and upload the sound
   - Once uploaded, click its name
   - Hold View raw and copy the address
   - Paste the link into the plugin
-- Locally:
+Locally:
   - Install [this file manager](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) & open it (or any file manager that lets you copy file paths)
   - Find the sound file
   - Click the 3 dots next to it & press Copy Path
@@ -279,8 +283,7 @@ Final result should be file:///storage/emulated/0/Example/Example.mp3`
 
 First of all, you need to enable transparency in Themer settings (chat, chat & settings). If you want full transparency, you need to use the template found below.
 
-- GitHub:
-
+GitHub:
   - Create a GitHub account
   - Create a repo (make sure it's public)
   - Click Add file and upload the image/gif
@@ -288,7 +291,7 @@ First of all, you need to enable transparency in Themer settings (chat, chat & s
   - Hold the image and copy the address
   - Go to Themer settings → your theme → Background & paste it
 
-- Locally:
+Locally:
   - Install [this file manager](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) & open it (or any file manager that lets you copy file paths)
   - Find the image/gif file
   - Click the 3 dots next to it & press Copy path
@@ -319,8 +322,6 @@ First of all, you need to enable the Enable Custom Fonts option in Themer settin
   - Add file:/ at the start
 
 Final result should be file://storage/emulated/0/Example/Example.ttf
-
-GitLab also works.
 
 ## Why does my background image not work
 
