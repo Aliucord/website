@@ -91,13 +91,13 @@ export default function About() {
           A mod for the Discord Android App
         </p>
         <div className="flex gap-4">
-          <a href="https://github.com/Aliucord" target="_blank" rel="noreferrer">
+          <a href="https://github.com/Aliucord/Aliucord" target="_blank" rel="noreferrer">
             <Button variant="ghost" className="flex items-center gap-2 hover:bg-primary/10 rounded-full">
               <FaGithub className="text-xl" />
               GitHub
             </Button>
           </a>
-          <a href="https://discord.gg/Aliucord" target="_blank" rel="noreferrer">
+          <a href="https://discord.gg/EsNDvBaHVU" target="_blank" rel="noreferrer">
             <Button variant="ghost" className="flex items-center gap-2 hover:bg-primary/10 rounded-full">
               <FaDiscord className="text-xl" />
               Discord
