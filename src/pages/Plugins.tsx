@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { fetchPlugins } from "@/lib/api";
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
@@ -41,7 +40,7 @@ export default function Plugins() {
         <div className="relative max-w-md mx-auto mb-12">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground w-5 h-5" />
           <Input 
-            className="pl-12 h-14 rounded-2xl border-2 bg-card"
+            className="pl-12 h-14 rounded-full border-none bg-accent/5 focus-visible:ring-primary/20"
             placeholder="Search plugins..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -57,27 +56,27 @@ export default function Plugins() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredPlugins.map((plugin) => (
-              <Card key={plugin.name} className="bg-card border-2 border-border rounded-[2rem] hover:border-primary/40 transition-all group overflow-hidden">
-                <CardHeader className="p-8">
-                  <CardTitle className="text-2xl font-bold mb-2 flex justify-between items-start">
+              <div key={plugin.name} className="material-card group hover:bg-accent/5 transition-all">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-2xl font-bold tracking-tight">
                     {plugin.name}
-                    <span className="text-xs font-mono bg-primary/10 text-primary px-2 py-1 rounded-md">
-                      {plugin.version}
+                  </h3>
+                  <span className="text-xs font-mono bg-primary/10 text-primary px-2 py-1 rounded-full">
+                    {plugin.version}
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {Array.isArray(plugin.authors) ? plugin.authors.map((author: any) => (
+                    <span key={author.name || author} className="text-sm font-bold text-primary">
+                      @{author.name || author}
                     </span>
-                  </CardTitle>
-                  <div className="flex flex-wrap gap-2 mt-auto">
-                    {Array.isArray(plugin.authors) ? plugin.authors.map((author: any) => (
-                      <span key={author.name || author} className="text-sm font-bold text-primary">
-                        @{author.name || author}
-                      </span>
-                    )) : plugin.authors && (
-                      <span className="text-sm font-bold text-primary">
-                        @{plugin.authors}
-                      </span>
-                    )}
-                  </div>
-                </CardHeader>
-              </Card>
+                  )) : plugin.authors && (
+                    <span className="text-sm font-bold text-primary">
+                      @{plugin.authors}
+                    </span>
+                  )}
+                </div>
+              </div>
             ))}
           </div>
         )}

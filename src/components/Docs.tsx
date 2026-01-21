@@ -14,11 +14,14 @@ export default function Docs() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const section = params.get("section");
-    if (section === "backports") {
+    const hash = window.location.hash.replace("#", "");
+
+    if (section === "backports" || hash === "backports") {
       setActiveTab("general");
       
       const scrollToSection = () => {
-        const element = document.getElementById("backports-section");
+        const id = section === "backports" ? "backports-section" : hash;
+        const element = document.getElementById(id);
         if (element) {
           const yOffset = -120;
           const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
@@ -37,6 +40,16 @@ export default function Docs() {
           setTimeout(() => clearInterval(interval), 3000);
         }
       }, 100);
+    } else if (hash) {
+      const scrollToHash = () => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+          return true;
+        }
+        return false;
+      };
+      setTimeout(scrollToHash, 100);
     }
   }, []);
 
@@ -92,27 +105,29 @@ export default function Docs() {
           </div>
 
           <div className="space-y-8">
-            {docSections.map((section, index) => (
-              <motion.div
-                key={`${activeTab}-${index}`}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                id={`doc-section-${index}`}
-                className="rounded-lg p-8 scroll-mt-24 border border-border bg-card shadow-sm overflow-x-auto"
-              >
-                {index === 0 && (
-                  <div className="mb-12 border-b border-border pb-8">
-                    <h1 className="text-4xl sm:text-5xl font-bold mb-4 tracking-tighter text-glow">
-                      {title}
-                    </h1>
-                  </div>
-                )}
-                {section.title !== title && (
-                  <h2 className="text-2xl font-bold mb-4 text-foreground">
-                    {section.title}
-                  </h2>
-                )}
+            {docSections.map((section, index) => {
+              const sectionId = section.title.toLowerCase().replace(/\s+/g, "-");
+              return (
+                <motion.div
+                  key={`${activeTab}-${index}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  id={sectionId}
+                  className="rounded-lg p-8 scroll-mt-24 border-none bg-card shadow-sm overflow-x-auto"
+                >
+                  {index === 0 && (
+                    <div className="mb-12 border-b border-border pb-8">
+                      <h1 className="text-4xl sm:text-5xl font-bold mb-4 tracking-tighter text-glow py-1">
+                        {title}
+                      </h1>
+                    </div>
+                  )}
+                  {section.title !== title && (
+                    <h2 className="text-2xl font-bold mb-4 text-foreground">
+                      {section.title}
+                    </h2>
+                  )}
                 <div className="prose dark:prose-invert max-w-none text-muted-foreground">
                   <ReactMarkdown
                     remarkPlugins={[remarkGfm]}
@@ -144,7 +159,7 @@ export default function Docs() {
                       ),
                       code: ({ node, inline, ...props }: any) =>
                         inline ? (
-                          <code className="bg-secondary/50 border border-border rounded px-2 py-1 font-mono text-sm text-primary dark:text-emerald-400" {...props} />
+                          <code className="bg-secondary/50 border border-border rounded px-2 py-0.5 font-mono text-sm text-primary dark:text-emerald-400 inline" {...props} />
                         ) : (
                           <code className="font-mono text-sm text-primary dark:text-emerald-400 block whitespace-pre-wrap" {...props} />
                         ),
@@ -200,7 +215,7 @@ export default function Docs() {
                       th: ({ node, ...props }) => (
                         <th className="border border-border bg-secondary/50 px-4 py-2 text-left font-bold text-foreground" {...props} />
                       ),
-                      td:({ node, ...props }) => (
+                      td: ({ node, ...props }) => (
                         <td className="border border-border px-4 py-2 text-muted-foreground min-w-[150px]" {...props} />
                       ),
                     } }
@@ -208,8 +223,9 @@ export default function Docs() {
                     {section.content}
                   </ReactMarkdown>
                 </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>

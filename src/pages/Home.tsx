@@ -42,7 +42,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="rounded-3xl overflow-hidden border-2 border-border shadow-2xl shadow-primary/20"
+              className="rounded-[2.5rem] overflow-hidden shadow-2xl shadow-primary/10"
             >
               <a href="https://discord.gg/EsNDvBaHVU" target="_blank" rel="noreferrer" className="block hover:opacity-90 transition-opacity duration-300">
                 <img 

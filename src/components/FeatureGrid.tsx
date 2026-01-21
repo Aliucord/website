@@ -25,16 +25,17 @@ export function FeatureGrid() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
+              className="h-full"
             >
-              <Card className="bg-card border-2 border-border rounded-[2.5rem] p-4 hover:border-primary/40 hover:bg-primary/[0.02] transition-all duration-500 group h-full shadow-sm">
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-3xl bg-primary/10 flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform duration-500">
+              <div className="material-card group h-full transition-all duration-500 hover:bg-accent/5">
+                <div className="flex flex-col h-full">
+                  <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
                     <feature.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <CardTitle className="text-2xl font-bold tracking-tight mb-3">
+                  <h3 className="text-2xl font-bold tracking-tight mb-3">
                     {feature.title}
-                  </CardTitle>
-                  <CardDescription className="text-lg leading-relaxed font-medium opacity-80">
+                  </h3>
+                  <div className="text-lg leading-relaxed font-medium opacity-80 text-muted-foreground">
                     <ReactMarkdown
                       components={{
                         a: ({ node, ...props }) => (
@@ -47,9 +48,9 @@ export function FeatureGrid() {
                     >
                       {feature.description}
                     </ReactMarkdown>
-                  </CardDescription>
-                </CardHeader>
-              </Card>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>

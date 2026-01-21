@@ -40,13 +40,13 @@ export function Hero() {
           transition={{ delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-6"
         >
-          <Button size="lg" asChild className="h-16 px-12 text-xl rounded-full bg-primary text-primary-foreground hover:opacity-90 shadow-2xl shadow-primary/20 transition-all font-black border-4 border-primary/10 active:scale-95">
+          <Button size="lg" asChild className="h-16 px-10 text-lg rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-all font-bold active:scale-95 border-none shadow-none">
             <a href="https://github.com/Aliucord/AliucordManager/releases/latest" target="_blank" rel="noreferrer">
               <Download className="mr-3 w-6 h-6" />
               Install Manager
             </a>
           </Button>
-          <Button size="lg" asChild className="h-16 px-12 text-xl rounded-full bg-secondary text-secondary-foreground hover:opacity-90 shadow-2xl shadow-secondary/20 transition-all font-black border-4 border-secondary/10 active:scale-95">
+          <Button size="lg" asChild className="h-16 px-10 text-lg rounded-full bg-accent/10 text-foreground hover:bg-accent/20 transition-all font-bold active:scale-95 border-none shadow-none">
             <a href="https://github.com/Aliucord/Aliucord#-installation" target="_blank" rel="noreferrer">
               <Book className="mr-3 w-6 h-6" />
               Guide

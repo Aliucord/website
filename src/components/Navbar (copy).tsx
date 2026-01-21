@@ -16,10 +16,10 @@ export function Navbar() {
   }, [location]);
 
   return (
-    <header className="fixed top-0 w-full z-50 border-none bg-background/80 backdrop-blur-xl">
-      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+    <header className="fixed top-0 w-full z-50 border-b border-border bg-background/95 backdrop-blur-md">
+      <div className="container mx-auto px-4 h-18 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <AliucordLogo className="w-10 h-10 text-primary group-hover:scale-110 transition-transform" animated />
+          <AliucordLogo className="w-9 h-9 text-primary group-hover:scale-110 transition-transform" animated />
         </Link>
 
         {/* Desktop Nav */}
@@ -31,7 +31,7 @@ export function Navbar() {
                 href={link.href}
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm font-bold text-muted-foreground hover:text-primary transition-colors"
+                className="text-sm font-semibold text-muted-foreground hover:text-primary transition-colors"
               >
                 {link.label}
               </a>
@@ -39,7 +39,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-bold transition-colors ${location === link.href ? 'text-primary' : 'text-muted-foreground hover:text-primary'}`}
+                className="text-sm font-semibold text-muted-foreground hover:text-primary transition-colors"
               >
                 {link.label}
               </Link>
@@ -49,28 +49,28 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <Link href="/about">
-            <Button variant="ghost" size="icon" className="rounded-full w-12 h-12 bg-accent/5 hover:bg-accent/10">
-              <Info className="w-6 h-6" />
+            <Button variant="ghost" size="icon" className="rounded-full">
+              <Info className="w-5 h-5" />
             </Button>
           </Link>
           <ThemeToggle />
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
-              <Button variant="ghost" size="icon" className="rounded-full w-12 h-12 bg-accent/5 hover:bg-accent/10">
+              <Button variant="ghost" size="icon" className="rounded-full">
                 <Menu className="w-6 h-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-background border-none p-6 rounded-l-[3rem] backdrop-blur-xl bg-background/95">
+            <SheetContent side="right" className="bg-background border-l-2 border-border p-6 rounded-l-3xl">
               <SheetTitle className="sr-only">Menu</SheetTitle>
               <SheetDescription className="sr-only">Navigation</SheetDescription>
               <div className="flex flex-col gap-6 mt-12">
                 {NAV_LINKS.map((link) => (
                   link.href.startsWith('http') ? (
-                    <a key={link.href} href={link.href} target="_blank" rel="noreferrer" className="text-2xl font-black hover:text-primary transition-colors">
+                    <a key={link.href} href={link.href} target="_blank" rel="noreferrer" className="text-xl font-bold hover:text-primary transition-colors">
                       {link.label}
                     </a>
                   ) : (
-                    <Link key={link.href} href={link.href} className={`text-2xl font-black transition-colors ${location === link.href ? 'text-primary' : 'hover:text-primary'}`}>
+                    <Link key={link.href} href={link.href} className="text-xl font-bold hover:text-primary transition-colors">
                       {link.label}
                     </Link>
                   )

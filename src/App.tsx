@@ -10,6 +10,7 @@ import Plugins from "@/pages/Plugins";
 import Themes from "@/pages/Themes";
 import FAQ from "@/pages/FAQ";
 import Documentation from "@/pages/Documentation";
+import About from "@/pages/About";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -23,6 +24,7 @@ function Router() {
           <Route path="/themes" component={Themes} />
           <Route path="/faq" component={FAQ} />
           <Route path="/documentation" component={Documentation} />
+          <Route path="/about" component={About} />
           <Route component={NotFound} />
         </Switch>
       </main>
