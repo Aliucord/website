@@ -20,13 +20,11 @@ export const THEME_DOCS: DocSection[] = [
 export const GENERAL_DOCS: DocSection[] = [
   {
     title: "Backports",
-    content: `# What features have been backported to Aliucord?
-
-**Legend**
+    content: `**Legend**
 - 💣: Broken or partially broken
 - 🚧: Still in development or beta
 
-**Note:** To install the plugins from here you need to click the plugin name, it will download the plugin .zip, now just move it to the \`Aliucord/plugins\` folder using a file manager & restart Aliucord in case it was open.
+**Note:** To install the plugins from here you need to click the plugin name, it will download the plugin .zip, now just move it to the Aliucord/plugins folder using a file manager & restart Aliucord in case it was open.
 
 ## Plugins
 
@@ -68,7 +66,7 @@ export const GENERAL_DOCS: DocSection[] = [
 - Viewing forwarded messages
 - Upload size (new 10mb limit for non-nitro users)
 - Display names
-- Pomelo usernames (\`@username\` instead of \`username#1234\`)
+- Pomelo usernames (@username instead of username#1234)
 - Polls
 - Pronouns
 - New profile badges (quests, developer, etc.)
@@ -82,9 +80,9 @@ export const GENERAL_DOCS: DocSection[] = [
 **You can't use multiple .ZIPs at once, you'll need to decide which features you prefer.**
   **How to use Aliucord from storage**
 
-- Download the \`.zip\` file from the links below
-- Extract it and find \`Aliucord.zip\` inside it
-- Move \`Aliucord.zip\` to your \`Aliucord\` folder
+- Download the .zip file from the links below
+- Extract it and find Aliucord.zip inside it
+- Move Aliucord.zip to your Aliucord folder
 - Open Aliucord settings
 - Enable [Developer Mode](https://github.com/user-attachments/assets/ee6a45bd-08a5-4bf8-af39-6d03b9d969a4) & [Aliucord from storage](https://github.com/user-attachments/assets/37f9f074-741e-46e1-8162-f753f4af8b30)
 - Restart Aliucord
@@ -99,9 +97,7 @@ You can also watch the [video instructions](https://github.com/user-attachments/
   },
   {
     title: "Beginner Guide",
-    content: `# Aliucord guide for beginners
-
-## How to install Aliucord
+    content: `## How to install Aliucord
 
 - [Aliucord Manager installation guide](https://github.com/Aliucord/Manager#installation)
 - [Direct Manager APK link](https://github.com/Aliucord/Manager/releases/download/v1.1.1/aliucord-manager-v1.1.1.apk)
@@ -122,7 +118,7 @@ You can also watch the [video instructions](https://github.com/user-attachments/
 
 1. Join the [Aliucord Discord server](https://discord.gg/EsNDvBaHVU)
 2. Make sure you are using the Aliucord app
-3. Install the [Themer plugin](https://raw.githubusercontent.com/Vendicated/AliucordPlugins/builds/Themer.zip) (move the .zip to \`Aliucord/plugins\` folder & restart app)
+3. Install the [Themer plugin](https://raw.githubusercontent.com/Vendicated/AliucordPlugins/builds/Themer.zip) (move the .zip to Aliucord/plugins folder & restart app)
 4. Go to [#themes](https://discord.com/channels/811255666990907402/824357609778708580) channel and hold any message (NOT THE LINK)
 5. Click on the first option ("Install [theme name]")
 
@@ -137,18 +133,16 @@ Required for [#unmaintained-plugins](https://discord.com/channels/81125566699090
 If you already have the plugin .zip, just follow two last steps.
 
 1. Go to any plugin repository ([like this one](https://github.com/Juby210/Aliucord-plugins))
-2. Click the branch button and select \`builds\`
+2. Click the branch button and select builds
 ![branch selector](image.png)
-3. Click the \`[PluginName].zip\` of the plugin you want
-4. Click \`Raw\`, \`View raw\` or the download button to download the .zip file
-5. Using a file manager ([we recommend Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) ([F-Droid](https://f-droid.org/packages/me.zhanghai.android.files/))) move the downloaded \`.zip\` to the \`Aliucord/plugins\` folder
+3. Click the [PluginName].zip of the plugin you want
+4. Click Raw, View raw or the download button to download the .zip file
+5. Using a file manager ([we recommend Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) ([F-Droid](https://f-droid.org/packages/me.zhanghai.android.files/))) move the downloaded .zip to the Aliucord/plugins folder
 6. Restart Aliucord`
   },
   {
     title: "Changelog",
-    content: `# Changelog
-
-## 2.?.? (unknown version number yet)
+    content: `## 2.?.? (unknown version number yet)
 - Display guild tags
 - Implement nameplates
 - Allow installing plugins from #bot-spam channel
@@ -194,9 +188,7 @@ If you already have the plugin .zip, just follow two last steps.
   },
   {
     title: "Forks",
-    content: `# Plugin forks info
-
-The forks can be installed from [here](https://discord.com/channels/811255666990907402/847566769258233926/1402218345570504806).
+    content: `The forks can be installed from [the documentation page](/documentation#forks).
 
 - AudioPlayer fork by Halkion fixes crashes and some bugs with audio files.
 
@@ -210,19 +202,17 @@ The forks can be installed from [here](https://discord.com/channels/811255666990
 
 - UITH fork by Serinova & DeafThing (renamed to CatUITH) focuses on [Catbox](https://catbox.moe) & [Litterbox](https://litterbox.catbox.moe) services and adds more options.
 
-- Ip fork by Serinova fixes the \`/ip\` command.
+- Ip fork by Serinova fixes the /ip command.
 
-- SendEmbeds fork by Serinova makes the \`/embed\` command work again by using directwebhook (original API died).`
+- SendEmbeds fork by Serinova makes the /embed command work again by using directwebhook (original API died).`
   },
   {
     title: "Missing Features",
-    content: `# Features missing from Aliucord
-
-Compared to the RN client.
+    content: `Compared to the RN client.
 
 |Feature|Notes|
 |-|-|
-|Apps|This means games like \`/wordle\` (ny times)
+|Apps|This means games like /wordle (ny times)
 |Shop|Discord decoration/orbs store
 |Ignoring users|Ignoring users (blocking without removing as friends)
 |Super reactions|The fancy reactions that are more annoying than normal ones
@@ -245,16 +235,13 @@ For a list of backported features, see the [Backports](https://aliucord.vercel.a
   },
   {
     title: "New UI",
-    content: `# How to make Aliucord look like modern Discord
-
-This is not really possible due to Aliucord using an old Discord version. However, there are two themes ([DiscordRN Dark](https://discord.com/channels/811255666990907402/824357609778708580/1396601756187885659) & [Discord Midnight theme](https://discord.com/channels/811255666990907402/824357609778708580/1400698799600570398)) that replicate the color & font of it (the UI itself is not possible to replicate).
+    content: `This is not really possible due to Aliucord using an old Discord version. However, there are two themes ([DiscordRN Dark](https://discord.com/channels/811255666990907402/824357609778708580/1396601756187885659) & [Discord Midnight theme](https://discord.com/channels/811255666990907402/824357609778708580/1400698799600570398)) that replicate the color & font of it (the UI itself is not possible to replicate).
 
 Alternatively, you can search for another modified Discord client that uses the new version instead of the old one [here](https://github.com/Discord-Client-Encyclopedia-Management/Discord3rdparties) ([Kettu](https://github.com/C0C0B01/KettuManager/releases/latest/download/Manager.apk) is recommended).`
   },
   {
     title: "Old UI",
-    content: `# Why does Aliucord use an old Discord version?
-1. React Native is very slow compared to Kotlin. RN is a framework for building apps using JavaScript, which is not as performant as Kotlin code. Discord's React Native version is known to have performance issues, especially on lower-end devices, because the app has been ported from iOS over to Android.
+    content: `1. React Native is very slow compared to Kotlin. RN is a framework for building apps using JavaScript, which is not as performant as Kotlin code. Discord's React Native version is known to have performance issues, especially on lower-end devices, because the app has been ported from iOS over to Android.
 2. Everything would need to be rewritten, wasting time, considering how bad the new Discord version is.
 3. Aliucord developers don't like to work with the new one.
 Notice from the AliucordRN repository
@@ -274,30 +261,25 @@ Source: [Wikipedia](https://en.wikipedia.org/wiki/Backporting)
   },
   {
     title: "Sounds",
-    content: `# How to use StartupSound, NoticeSound & CustomSounds plugins
-
-- GitHub:
+    content: `- GitHub:
   - Create a GitHub account
   - Create a repo (make sure its public)
   - Click add file and upload the sound
   - Once uploaded, click its name
-  - Hold \`View raw\` and copy the address
+  - Hold View raw and copy the address
   - Paste the link(s) into the plugin
-
 - Locally:
   - Install [this file manager](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) & open it (or any file manager that lets you copy file paths)
   - Find the sound file
-  - Click the 3 dots next to it & press \`Copy Path\`
+  - Click the 3 dots next to it & press Copy Path
   - Go to the plugin settings & paste it
-  - Add \`file://\` at the start
+  - Add file:// at the start
 
-Final result should be \`file:///storage/emulated/0/Example/Example.mp3\``
+Final result should be file:///storage/emulated/0/Example/Example.mp3`
   },
   {
     title: "Themer Guide",
-    content: `# Themer plugin guide
-
-## How to create your own theme
+    content: `## How to create your own theme
 
 - [Documentation](https://github.com/Aliucord/documentation/blob/main/theme-dev)
 - [Theme maker](https://aliucord.com/theme-maker)
@@ -310,42 +292,42 @@ First of all, you need to enable transparency in Themer settings (chat, chat & s
 
   - Create a GitHub account
   - Create a repo (make sure it's public)
-  - Click \`Add file\` and upload the image/gif
+  - Click Add file and upload the image/gif
   - Once uploaded, click its name
   - Hold the image and copy the address
-  - Go to Themer settings → your theme → \`Background\` & paste it
+  - Go to Themer settings → your theme → Background & paste it
 
 - Locally:
   - Install [this file manager](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) & open it (or any file manager that lets you copy file paths)
   - Find the image/gif file
-  - Click the 3 dots next to it & press \`Copy path\`
-  - Go to Themer settings → your theme → \`Background\` & paste it
-  - Add \`file:/\` at the start
+  - Click the 3 dots next to it & press Copy path
+  - Go to Themer settings → your theme → Background & paste it
+  - Add file:/ at the start
 
-Final result should be \`file://storage/emulated/0/Example/Example.jpg\`
+Final result should be file://storage/emulated/0/Example/Example.jpg
 
 GitLab, Imgbb & Imgur also work.
 
 ## How to set a custom font
 
-First of all, you need to enable the \`Enable Custom Fonts\` option in Themer settings.
+First of all, you need to enable the Enable Custom Fonts option in Themer settings.
 
 - GitHub:
   - Create a GitHub account
   - Create a repo (make sure it's public)
-  - Click \`Add file\` and upload the font
+  - Click Add file and upload the font
   - Once uploaded, click its name
-  - Hold \`View raw\` and copy the address
-  - Go to Themer settings → your theme → \`Fonts\` & paste it where the asterisk is
+  - Hold View raw and copy the address
+  - Go to Themer settings → your theme → Fonts & paste it where the asterisk is
     If the font you want is already uploaded in some repo, you can just copy the raw link, no need to make your own repo.
 - Locally:
   - Install [this file manager](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) & open it (or any file manager that lets you copy file paths)
   - Find the font file
-  - Click the 3 dots next to it & press \`Copy path\`
-  - Go to Themer settings → your theme → \`Fonts\` & paste it where the asterisk is
-  - Add \`file:/\` at the start
+  - Click the 3 dots next to it & press Copy path
+  - Go to Themer settings → your theme → Fonts & paste it where the asterisk is
+  - Add file:/ at the start
 
-Final result should be \`file://storage/emulated/0/Example/Example.ttf\`
+Final result should be file://storage/emulated/0/Example/Example.ttf
 
 GitLab also works.
 
@@ -353,27 +335,25 @@ GitLab also works.
 
 - You didn't enable transparency
 - You enabled full transparency which doesn't work without the template
-- You are using \`cdn.discordapp.com\` or \`media.discordapp.net\` which don't work as a valid URL anymore
+- You are using cdn.discordapp.com or media.discordapp.net which don't work as a valid URL anymore
 - The URL is incorrect
 
 ## How to make the background work with full transparency
 
 - Open the [template](https://github.com/OasisVee/theme-templates/blob/main/full-transparency-background-template.json)
 - Press the 3 dots and download
-- Move the downloaded \`.json\` to your \`Aliucord/themes\` folder using a file manager & restart Aliucord if it was open
+- Move the downloaded .json to your Aliucord/themes folder using a file manager & restart Aliucord if it was open
 - Go to Themer settings, enable full transparency & enable the theme
-- Go inside the theme settings → \`Background\` & paste the image/gif url
+- Go inside the theme settings → Background & paste the image/gif url
 - Press back, press the save button & restart Aliucord`
   },
   {
     title: "UserPFP/BG",
-    content: `# How to use UserPFP & UserBG plugins
-
-## UserPFP
+    content: `## UserPFP
 - Make sure you have the plugin installed
 - Join the [UserPFP server](https://discord.gg/userpfp-1129784704267210844)
-- Read \`#avatar-rules\` before proceeding
-- Go to \`#request-here\` and use the \`/request\` command
+- Read #avatar-rules before proceeding
+- Go to #request-here and use the /request command
 - Add the gif you want
 - You will get a ping whenever it has been added or rejected
 - When it's accepted go to the plugin settings and click "Redownload databases"
@@ -382,10 +362,10 @@ GitLab also works.
 ## UserBG
 - Make sure you have the plugin installed
 - Join the [UserBG server](https://discord.gg/TeRQEPb)
-- Read \`#usrbg-guide\` before proceeding
-- Use the \`/bg\` command in any channel that you can type in
+- Read #usrbg-guide before proceeding
+- Use the /bg command in any channel that you can type in
 - Add the image/gif you want
-- Check \`#userbg-log\` to see if it has been accepted or not
+- Check #userbg-log to see if it has been accepted or not
 - Go to the plugin settings and click "Redownload databases"
 - Restart Aliucord to see the changes`
   }
