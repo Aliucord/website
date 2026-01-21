@@ -215,7 +215,7 @@ export default function Docs() {
                       th: ({ node, ...props }) => (
                         <th className="border border-border bg-secondary/50 px-4 py-2 text-left font-bold text-foreground" {...props} />
                       ),
-                      td:({ node, ...props }) => (
+                      td: ({ node, ...props }) => (
                         <td className="border border-border px-4 py-2 text-muted-foreground min-w-[150px]" {...props} />
                       ),
                     } }
