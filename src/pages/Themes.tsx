@@ -2,7 +2,19 @@ import { useState, useEffect } from "react";
 import { fetchThemes } from "@/lib/api";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
+
+const MaterialIcon = ({ name, size = 24, className = "" }: { name: string, size?: number, className?: string }) => (
+  <span 
+    className={`material-symbols-rounded ${className}`} 
+    style={{ 
+      fontSize: size, 
+      fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24",
+      userSelect: 'none'
+    }}
+  >
+    {name}
+  </span>
+);
 
 export default function Themes() {
   const [themes, setThemes] = useState<any[]>([]);
@@ -38,9 +50,10 @@ export default function Themes() {
         </div>
 
         <div className="relative max-w-md mx-auto mb-12">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground w-5 h-5" />
+          <MaterialIcon name="search" size={20} className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground" />
           <Input 
-            className="pl-12 h-14 rounded-full border-none bg-accent/5 focus-visible:ring-primary/20"
+            className="pl-12 h-14 rounded-full border-none shadow-none focus-visible:ring-0"
+            style={{ backgroundColor: 'hsl(var(--card))', color: 'hsl(var(--card-foreground))' }}
             placeholder="Search themes..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -56,19 +69,15 @@ export default function Themes() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredThemes.map((theme) => (
-              <div key={theme.name} className="material-card group hover:bg-accent/5 transition-all">
-                <h3 className="text-2xl font-bold tracking-tight mb-4">
+              <div key={theme.name} className="material-card group transition-all flex flex-col overflow-hidden">
+                <h3 className="text-xl md:text-2xl font-bold tracking-tight mb-4 truncate">
                   {theme.name}
                 </h3>
-                <div className="mt-auto">
-                  <a 
-                    href={theme.url} 
-                    target="_blank" 
-                    rel="noreferrer"
-                    className="text-primary font-bold hover:underline"
-                  >
-                    View Source
-                  </a>
+                
+                <div className="flex items-center justify-between mt-auto pt-4 border-t border-border/40 gap-2">
+                  <span className="text-xs font-bold text-primary truncate">
+                    @{theme.author || "Unknown"}
+                  </span>
                 </div>
               </div>
             ))}

@@ -1,8 +1,20 @@
 import { motion } from "framer-motion";
 import { FEATURES } from "@/lib/constants";
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import ReactMarkdown from "react-markdown";
 import { Link } from "wouter";
+
+const MaterialIcon = ({ name, size = 24, className = "" }: { name: string, size?: number, className?: string }) => (
+  <span 
+    className={`material-symbols-rounded ${className}`} 
+    style={{ 
+      fontSize: size, 
+      fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24",
+      userSelect: 'none'
+    }}
+  >
+    {name}
+  </span>
+);
 
 export function FeatureGrid() {
   return (
@@ -27,10 +39,15 @@ export function FeatureGrid() {
               viewport={{ once: true }}
               className="h-full"
             >
-              <div className="material-card group h-full transition-all duration-500 hover:bg-accent/5">
+              <div className="material-card group h-full transition-all duration-500">
                 <div className="flex flex-col h-full">
-                  <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                    <feature.icon className="w-8 h-8 text-primary" />
+                  <div
+                    className="w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500"
+                    style={{
+                      backgroundColor: 'hsl(var(--accent))'
+                    }}
+                  >
+                    <MaterialIcon name={feature.iconName || "extension"} size={32} className="text-primary" />
                   </div>
                   <h3 className="text-2xl font-bold tracking-tight mb-3">
                     {feature.title}

@@ -15,7 +15,7 @@ export function Footer() {
               <span className="font-black text-3xl tracking-tighter">Aliucord</span>
             </Link>
             <p className="text-xl text-muted-foreground max-w-sm font-medium leading-relaxed">
-              A customizable Discord client for Android
+              A mod for the Discord Android App
             </p>
           </div>
           

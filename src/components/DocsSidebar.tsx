@@ -4,10 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 interface DocsSidebarProps {
   sections: Array<{ title: string }>;
-  activeTab?: "plugins" | "themes" | "general";
+  activeTab: "plugins" | "themes" | "general";
+  setActiveTab: (tab: "plugins" | "themes" | "general") => void;
 }
 
-export default function DocsSidebar({ sections, activeTab }: DocsSidebarProps) {
+export default function DocsSidebar({ sections, activeTab, setActiveTab }: DocsSidebarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [matches, setMatches] = useState<Range[]>([]);
@@ -167,16 +168,17 @@ export default function DocsSidebar({ sections, activeTab }: DocsSidebarProps) {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              className="rounded-lg overflow-hidden shadow-lg min-w-[200px] max-w-[280px] sm:max-w-xs bg-card border border-border"
+              className="rounded-2xl overflow-hidden shadow-2xl min-w-[220px] max-w-[280px] sm:max-w-xs border-none"
+              style={{ backgroundColor: 'var(--md-surface-container, hsl(var(--card)))' }}
             >
-              <div className="p-3">
-                <h3 className="text-sm font-semibold mb-2 text-foreground">Sections</h3>
-                <div className="max-h-48 overflow-y-auto space-y-1">
+              <div className="p-4">
+                <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground/60 px-3 mb-2">Sections</h3>
+                <div className="max-h-48 overflow-y-auto space-y-1 pr-1 custom-scrollbar">
                   {sections.map((section, index) => (
                     <button
                       key={index}
                       onClick={() => handleNavigate(index, section.title)}
-                      className="w-full text-left px-3 py-2 rounded transition-colors text-sm hover:bg-secondary text-muted-foreground"
+                      className="w-full text-left px-4 py-2 rounded-lg transition-colors text-sm hover:bg-accent/10 text-muted-foreground hover:text-foreground truncate"
                     >
                       {section.title}
                     </button>
@@ -196,7 +198,7 @@ export default function DocsSidebar({ sections, activeTab }: DocsSidebarProps) {
                 exit={{ opacity: 0, width: 0 }}
                 className="overflow-hidden"
               >
-                <div className="flex items-center rounded-lg px-3 py-2 gap-2 bg-card border border-border">
+                <div className="flex items-center rounded-lg px-3 py-2 gap-2 border-none" style={{ backgroundColor: 'hsl(var(--card))', color: 'hsl(var(--card-foreground))' }}>
                   <Search className="w-4 h-4 text-muted-foreground" />
                   <input
                     type="text"
@@ -236,7 +238,8 @@ export default function DocsSidebar({ sections, activeTab }: DocsSidebarProps) {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-3 rounded-lg flex items-center justify-center shadow-lg transition-colors bg-card border border-border text-foreground hover:bg-secondary"
+            className="p-3 rounded-lg flex items-center justify-center shadow-lg transition-colors border-none text-foreground"
+            style={{ backgroundColor: 'var(--md-surface-container, hsl(var(--card)))' }}
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

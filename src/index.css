@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -12,7 +13,7 @@
 
   --background: 142 15% 5%;
   --foreground: 142 10% 98%;
-  --card: 142 12% 8%;
+  --card: 142 12% 14%;
   --card-foreground: 142 10% 98%;
   --popover: 142 12% 8%;
   --popover-foreground: 142 10% 98%;
@@ -25,12 +26,22 @@
   --border: 142 20% 15%;
   --input: 142 15% 10%;
   --ring: 142 71% 45%;
+
+  --color-primary: var(--md-primary, hsl(142 71% 45%));
+  --color-background: var(--md-background, hsl(142 15% 5%));
+  --color-surface: var(--md-surface, hsl(142 12% 8%));
+}
+
+.dark {
+  --background: 142 15% 5%;
+  --foreground: 142 10% 98%;
+  --card: 142 12% 10%;
 }
 
 .light {
   --background: 142 30% 98%;
   --foreground: 142 50% 5%;
-  --card: 142 25% 96%;
+  --card: 142 25% 97%;
   --card-foreground: 142 50% 5%;
   --popover: 142 25% 96%;
   --popover-foreground: 142 50% 5%;
@@ -46,53 +57,46 @@
 }
 
 @theme inline {
-  --color-background: hsl(var(--background));
-  --color-foreground: hsl(var(--foreground));
-  --color-card: hsl(var(--card));
-  --color-card-foreground: hsl(var(--card-foreground));
-  --color-popover: hsl(var(--popover));
-  --color-popover-foreground: hsl(var(--popover-foreground));
-  --color-primary: hsl(var(--primary));
-  --color-primary-foreground: hsl(var(--primary-foreground));
-  --color-secondary: hsl(var(--secondary));
-  --color-secondary-foreground: hsl(var(--secondary-foreground));
-  --color-muted: hsl(var(--muted));
-  --color-muted-foreground: hsl(var(--muted-foreground));
-  --color-accent: hsl(var(--accent));
-  --color-accent-foreground: hsl(var(--accent-foreground));
-  --color-destructive: hsl(var(--destructive));
-  --color-destructive-foreground: hsl(var(--destructive-foreground));
-  --color-border: hsl(var(--border));
-  --color-input: hsl(var(--input));
-  --color-ring: hsl(var(--ring));
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --color-background: var(--md-background, hsl(var(--background)));
+  --color-foreground: var(--md-on-background, hsl(var(--foreground)));
+  --color-card: var(--md-surface-container, hsl(var(--card)));
+  --color-card-foreground: var(--md-on-surface, hsl(var(--card-foreground)));
+  --color-primary: var(--md-primary, hsl(var(--primary)));
+  --color-primary-foreground: var(--md-on-primary, hsl(var(--primary-foreground)));
+  --color-secondary: var(--md-secondary, hsl(var(--secondary)));
+  --color-secondary-foreground: var(--md-on-secondary, hsl(var(--secondary-foreground)));
+  --color-accent: var(--md-tertiary, hsl(var(--accent)));
+  --color-accent-foreground: var(--md-on-tertiary, hsl(var(--accent-foreground)));
+  --color-destructive: var(--md-error, hsl(var(--destructive)));
+  --color-destructive-foreground: var(--md-on-error, hsl(var(--destructive-foreground)));
+  --color-border: var(--md-outline, hsl(var(--border)));
+  --color-input: var(--md-surface-variant, hsl(var(--input)));
+  --color-ring: var(--md-primary, hsl(var(--ring)));
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 0.5rem);
   --radius-sm: calc(var(--radius) - 0.75rem);
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  html {
-    background-color: hsl(var(--background)) !important;
-    background-image: none !important;
-    overflow-y: auto;
-  }
-  body {
-    @apply text-foreground font-sans antialiased selection:bg-primary/20 selection:text-primary transition-colors duration-300;
-    background-color: hsl(var(--background)) !important;
-    margin: 0;
-    padding: 0;
-  }
-}
-
 .material-card {
-  @apply bg-card rounded-[3rem] p-10 shadow-none border-none transition-colors duration-300;
+  @apply rounded-[3rem] p-10 shadow-none border-none transition-colors duration-300;
+  background-color: hsl(var(--card)) !important;
+  color: var(--md-on-surface, hsl(var(--card-foreground))) !important;
 }
 
 .material-button {
   @apply rounded-full px-10 py-4 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] font-black;
+  background-color: var(--md-primary, hsl(var(--primary))) !important;
+  color: var(--md-on-primary, hsl(var(--primary-foreground))) !important;
+}
+
+:root, .dark, .light {
+  background-color: var(--md-background, hsl(var(--background))) !important;
+  color: var(--md-on-background, hsl(var(--foreground))) !important;
+}
+
+body {
+  background-color: var(--md-background, hsl(var(--background))) !important;
 }
 
 .material-icon-container {
@@ -104,7 +108,7 @@
     text-shadow: 0 0 15px hsla(145, 100%, 39%, 0.3);
   }
   .glass-panel {
-    @apply bg-background/95 backdrop-blur-md border border-border;
+    @apply bg-accent/5 backdrop-blur-md border-none;
   }
   .grid-bg {
     background-image: linear-gradient(to right, hsla(145, 100%, 39%, 0.04) 1px, transparent 1px),

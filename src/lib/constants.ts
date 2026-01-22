@@ -1,5 +1,3 @@
-import { Share2, Puzzle, Shield, Smartphone, Palette, Code2 } from "lucide-react";
-
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Plugins", href: "/plugins" },
@@ -11,32 +9,32 @@ export const NAV_LINKS = [
 
 export const FEATURES = [
   {
-    icon: Puzzle,
+    iconName: "extension",
     title: "Plugins",
     description: "Personalize Discord with hundreds of community-made plugins.",
   },
   {
-    icon: Palette,
+    iconName: "palette",
     title: "Theming",
     description: "Total control over how your app looks. Change colors, fonts, and even add custom backgrounds to make it your own.",
   },
   {
-    icon: Shield,
+    iconName: "security",
     title: "Privacy First",
     description: "Aliucord has a built-in plugin called NoTrack to reduce the tracking/telemetry of Discord to the maximum possible.",
   },
   {
-    icon: Smartphone,
+    iconName: "phone_android",
     title: "Android Native",
     description: "Optimized for better performance and battery life on your Android device.",
   },
   {
-    icon: Code2,
+    iconName: "code",
     title: "Open Source",
     description: "The code is available on GitHub.",
   },
   {
-    icon: Share2,
+    iconName: "update",
     title: "Modernized",
     description: "Many of the new Discord features have been backported. A list can be found [here](/documentation?section=backports).",
   },

@@ -6,7 +6,19 @@ import rehypeRaw from "rehype-raw";
 import DocsSidebar from "./DocsSidebar";
 import { PLUGIN_DOCS, THEME_DOCS, GENERAL_DOCS } from "../lib/docs";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
-import { AlertTriangle } from "lucide-react";
+
+const MaterialIcon = ({ name, size = 24, className = "" }: { name: string, size?: number, className?: string }) => (
+  <span 
+    className={`material-symbols-rounded ${className}`} 
+    style={{ 
+      fontSize: size, 
+      fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24",
+      userSelect: 'none'
+    }}
+  >
+    {name}
+  </span>
+);
 
 export default function Docs() {
   const [activeTab, setActiveTab] = useState<"plugins" | "themes" | "general">("general");
@@ -31,7 +43,6 @@ export default function Docs() {
         return false;
       };
 
-      // Try with a slight delay to ensure tab switching has started
       setTimeout(() => {
         if (!scrollToSection()) {
           const interval = setInterval(() => {
@@ -55,11 +66,6 @@ export default function Docs() {
 
   const docSections = activeTab === "plugins" ? PLUGIN_DOCS : activeTab === "themes" ? THEME_DOCS : GENERAL_DOCS;
   const title = activeTab === "plugins" ? "Plugin Development" : activeTab === "themes" ? "Theme Development" : "Guides";
-  const description = activeTab === "plugins"
-    ? "Learn how to develop plugins for Aliucord with our comprehensive guides covering everything from prerequisites to reflection."
-    : activeTab === "themes"
-      ? "Create beautiful themes for Aliucord. Customize every color and element of the Discord UI."
-      : "General guides, interface information, backports, and changelogs.";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -69,41 +75,6 @@ export default function Docs() {
     <div className="min-h-screen bg-transparent text-foreground">
       <section className="py-24 px-6 relative z-0">
         <div className="max-w-4xl mx-auto">
-          <div className="flex justify-center mb-8">
-            <div className="inline-flex rounded-lg p-1 bg-card/80 backdrop-blur-md border border-border">
-              <button
-                onClick={() => setActiveTab("general")}
-                className={`px-6 py-2 rounded-md text-sm font-medium transition-all ${
-                  activeTab === "general"
-                    ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                Guides
-              </button>
-              <button
-                onClick={() => setActiveTab("plugins")}
-                className={`px-6 py-2 rounded-md text-sm font-medium transition-all ${
-                  activeTab === "plugins"
-                    ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                Plugin Dev
-              </button>
-              <button
-                onClick={() => setActiveTab("themes")}
-                className={`px-6 py-2 rounded-md text-sm font-medium transition-all ${
-                  activeTab === "themes"
-                    ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                Theme Dev
-              </button>
-            </div>
-          </div>
-
           <div className="space-y-8">
             {docSections.map((section, index) => {
               const sectionId = section.title.toLowerCase().replace(/\s+/g, "-");
@@ -114,11 +85,12 @@ export default function Docs() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   id={sectionId}
-                  className="rounded-lg p-8 scroll-mt-24 border-none bg-card shadow-sm overflow-x-auto"
+                  className="rounded-lg p-8 scroll-mt-24 border-none shadow-none overflow-x-auto"
+                  style={{ backgroundColor: 'hsl(var(--card))', color: 'hsl(var(--card-foreground))' }}
                 >
                   {index === 0 && (
                     <div className="mb-12 border-b border-border pb-8">
-                      <h1 className="text-4xl sm:text-5xl font-bold mb-4 tracking-tighter text-glow py-1">
+                      <h1 className="text-4xl sm:text-5xl font-bold mb-4 tracking-tighter py-1">
                         {title}
                       </h1>
                     </div>
@@ -159,12 +131,12 @@ export default function Docs() {
                       ),
                       code: ({ node, inline, ...props }: any) =>
                         inline ? (
-                          <code className="bg-secondary/50 border border-border rounded px-2 py-0.5 font-mono text-sm text-primary dark:text-emerald-400 inline" {...props} />
+                          <code className="bg-secondary/50 border-none rounded px-2 py-0.5 font-mono text-sm text-primary dark:text-emerald-400 inline" {...props} />
                         ) : (
                           <code className="font-mono text-sm text-primary dark:text-emerald-400 block whitespace-pre-wrap" {...props} />
                         ),
                       pre: ({ node, ...props }) => (
-                        <pre className="bg-black/40 border border-border rounded p-4 overflow-x-auto mb-3 text-primary dark:text-emerald-400 whitespace-pre-wrap font-mono" {...props} />
+                        <pre className="bg-black/40 border-none rounded p-4 overflow-x-auto mb-3 text-primary dark:text-emerald-400 whitespace-pre-wrap font-mono" {...props} />
                       ),
                       blockquote: ({ node, ...props }) => (
                         <blockquote className="border-l-4 border-primary pl-4 italic my-3 text-muted-foreground" {...props} />
@@ -177,8 +149,6 @@ export default function Docs() {
                         }).join("");
 
                         if ((activeTab === "general" || activeTab === "themes") && /warning/i.test(content)) {
-                          // Remove the leading "warning:" text from the content display if possible
-                          // or just rely on the AlertTitle
                           const displayChildren = React.Children.map(children, (child) => {
                             if (typeof child === "string") {
                               return child.replace(/^warning:\s*/i, "");
@@ -188,7 +158,7 @@ export default function Docs() {
 
                           return (
                             <Alert className="my-4 bg-amber-500/10 border-amber-500/50 text-amber-600 dark:text-amber-400">
-                              <AlertTriangle className="h-4 w-4" />
+                              <MaterialIcon name="warning" size={20} className="mr-2" />
                               <AlertTitle>Warning</AlertTitle>
                               <AlertDescription>
                                 {displayChildren}
@@ -230,7 +200,11 @@ export default function Docs() {
         </div>
       </section>
 
-      <DocsSidebar sections={docSections} activeTab={activeTab} />
+      <DocsSidebar 
+        sections={docSections} 
+        activeTab={activeTab} 
+        setActiveTab={setActiveTab} 
+      />
     </div>
   );
 }

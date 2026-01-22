@@ -10,6 +10,7 @@ export function ThemeToggle() {
     }
     return true;
   });
+  const defaultHex = "#49e069";
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -27,19 +28,20 @@ export function ThemeToggle() {
   }, [isDark]);
 
   return (
-    <Button
-      variant="ghost"
-      size="icon"
-      onClick={() => setIsDark(!isDark)}
-      className="rounded-full hover:bg-primary/10 relative"
-      data-testid="button-theme-toggle"
-    >
-      {isDark ? (
-        <Sun className="h-5 w-5 text-primary" />
-      ) : (
-        <Moon className="h-5 w-5 text-primary" />
-      )}
-      <span className="sr-only">Toggle theme</span>
-    </Button>
+    <div className="flex items-center gap-2">
+      <Button
+        variant="ghost"
+        size="icon"
+        className="rounded-full hover:bg-primary/10 relative"
+        data-testid="button-theme-toggle"
+        onClick={() => setIsDark(!isDark)}
+      >
+        {isDark ? (
+          <Sun className="h-5 w-5 text-primary" />
+        ) : (
+          <Moon className="h-5 w-5 text-primary" />
+        )}
+      </Button>
+    </div>
   );
 }

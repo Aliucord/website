@@ -85,23 +85,19 @@ export default function About() {
   return (
     <div className="container mx-auto px-4 py-24 max-w-4xl">
       <div className="flex flex-col items-center text-center mb-16">
-        <AliucordLogo className="w-32 h-32 mb-6" animated />
-        <h1 className="text-4xl font-bold mb-2">Aliucord</h1>
+        <AliucordLogo className="w-40 h-40 mb-4" animated />
+        <h1 className="text-4xl font-bold mb-1">Aliucord</h1>
         <p className="text-muted-foreground text-lg mb-6">
           A mod for the Discord Android App
         </p>
-        <div className="flex gap-4">
-          <a href="https://github.com/Aliucord/Aliucord" target="_blank" rel="noreferrer">
-            <Button variant="ghost" className="flex items-center gap-2 hover:bg-primary/10 rounded-full">
-              <FaGithub className="text-xl" />
-              GitHub
-            </Button>
+        <div className="flex gap-10 justify-center">
+          <a href="https://github.com/Aliucord/Aliucord" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-foreground hover:text-primary transition-colors font-medium text-lg">
+            <FaGithub className="text-2xl" />
+            GitHub
           </a>
-          <a href="https://discord.gg/EsNDvBaHVU" target="_blank" rel="noreferrer">
-            <Button variant="ghost" className="flex items-center gap-2 hover:bg-primary/10 rounded-full">
-              <FaDiscord className="text-xl" />
-              Discord
-            </Button>
+          <a href="https://discord.gg/EsNDvBaHVU" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-foreground hover:text-primary transition-colors font-medium text-lg">
+            <FaDiscord className="text-2xl" />
+            Discord
           </a>
         </div>
       </div>
