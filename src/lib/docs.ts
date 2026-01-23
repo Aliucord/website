@@ -326,7 +326,7 @@ Final result should be file://storage/emulated/0/Example/Example.ttf
 - Press back, press the save button & restart Aliucord`
   },
   {
-    title: "UserPFP/BG",
+    title: "UserPFPBG",
     content: `## UserPFP
 - Make sure you have the plugin installed
 - Join the [UserPFP server](https://discord.gg/userpfp-1129784704267210844)
