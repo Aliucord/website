@@ -125,6 +125,7 @@ You can also watch the [video instructions](https://github.com/user-attachments/
 ## How to install plugins manually
 
 Required for [#unmaintained-plugins](https://discord.com/channels/811255666990907402/861935147272110100) channel
+
 If you already have the plugin .zip, just follow two last steps.
 
 1. Go to any plugin repository ([like this one](https://github.com/Juby210/Aliucord-plugins))
@@ -189,7 +190,8 @@ If you already have the plugin .zip, just follow two last steps.
 - NitroSpoof fork by Kiwi makes the fake emojis look real just like on Vencord's FakeNitro plugin or Vendetta's (and their forks) Realmoji plugin. Also fixes a scrolling bug in emoji picker.
 - FakeStickers fork by Archimedes (renamed to BetterFakeStickers) fixes not being able to reply with stickers.
 - Ip fork by Serinova fixes the /ip command.
-- SendEmbeds fork by Serinova makes the /embed command work again by using directwebhook (original API died).`
+- SendEmbeds fork by Serinova makes the /embed command work again by using directwebhook (original API died).
+- PersistSettings fork by Archimedes makes the plugin work again for 126.21 version.`
   },
   {
     title: "Missing Features",
@@ -220,13 +222,17 @@ For a list of backported features, see the [Backports](/documentation#backports)
   },
   {
     title: "New UI",
-    content: `This is not really possible due to Aliucord using an old Discord version. However, there are two themes ([DiscordRN Dark](https://discord.com/channels/811255666990907402/824357609778708580/1396601756187885659) & [Discord Midnight theme](https://discord.com/channels/811255666990907402/824357609778708580/1400698799600570398)) that replicate the color & font of it (the UI itself is not possible to replicate).
+    content: `**How to get modern Discord interface (UI) in Aliucord**
+
+This is not really possible due to Aliucord using an old Discord version. However, there are two themes ([DiscordRN Dark](https://discord.com/channels/811255666990907402/824357609778708580/1396601756187885659) & [Discord Midnight theme](https://discord.com/channels/811255666990907402/824357609778708580/1400698799600570398)) that replicate the color & font of it (the UI itself is not possible to replicate).
 
 Alternatively, you can search for another modified Discord client that uses the new version instead of the old one [here](https://github.com/Discord-Client-Encyclopedia-Management/Discord3rdparties) ([Kettu](https://github.com/C0C0B01/KettuManager/releases/latest/download/Manager.apk) is recommended).`
   },
   {
     title: "Old UI",
-    content: `- React Native is very slow compared to Kotlin. RN is a framework for building apps using JavaScript, which is not as performant as Kotlin code. Discord's React Native version is known to have performance issues, especially on lower-end devices, because the app has been ported from iOS over to Android.
+    content: `**Why does Aliucord use an old Discord version?**
+
+- React Native is very slow compared to Kotlin. RN is a framework for building apps using JavaScript, which is not as performant as Kotlin code. Discord's React Native version is known to have performance issues, especially on lower-end devices, because the app has been ported from iOS over to Android.
 - Everything would need to be rewritten, wasting time, considering how bad the new Discord version is.
 - Aliucord developers don't like to work with the new one. [Notice from the AliucordRN repository](https://github.com/Aliucord/AliucordRN#-notice-)
 - If Aliucord ceases to exist, there wouldn't be any active clients using the good old Discord version.
@@ -240,7 +246,9 @@ Source: <a href="https://drive.google.com/drive/mobile/folders/1Y2m2lMSpN3GlOcXy
   },
   {
     title: "Sounds",
-    content: `**GitHub:**
+    content: `**How to use "sound" plugins**
+
+**GitHub:**
   - Create a GitHub account
   - Create a repo (make sure it's public)
   - Click add file and upload the sound
@@ -326,8 +334,10 @@ Final result should be file://storage/emulated/0/Example/Example.ttf
 - Press back, press the save button & restart Aliucord`
   },
   {
-    title: "UserPFPBG",
-    content: `## UserPFP
+    title: "UserPFP/BG",
+    content: `**How to use UserPFP/BG plugins**
+
+## UserPFP
 - Make sure you have the plugin installed
 - Join the [UserPFP server](https://discord.gg/userpfp-1129784704267210844)
 - Read #avatar-rules before proceeding
