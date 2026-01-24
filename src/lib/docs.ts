@@ -336,7 +336,7 @@ Final result should be file://storage/emulated/0/Example/Example.ttf
 - Press back, press the save button & restart Aliucord`
   },
   {
-    title: "UserPFP/BG",
+    title: "UserPFP-BG",
     content: `**How to use UserPFP/BG plugins**
 
 ## UserPFP
