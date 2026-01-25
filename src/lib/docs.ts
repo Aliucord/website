@@ -78,8 +78,9 @@ export const GENERAL_DOCS: DocSection[] = [
 
 ## Aliucord from storage
 
-**This method is used for core features that are not merged yet, this means that they are still in an Alpha state, use at your own risk.**
-**You can't use multiple .ZIPs at once, you'll need to decide which features you prefer.**
+**Notes:**
+- This method is used for core features that are not merged yet.
+- You can't use multiple .ZIPs at once, you'll need to decide which features you prefer.
 
   **How to use Aliucord from storage**
 
