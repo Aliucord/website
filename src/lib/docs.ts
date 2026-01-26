@@ -272,10 +272,7 @@ Final result should be file:///storage/emulated/0/Example/Example.mp3`
   },
   {
     title: "Themer Guide",
-    content: `## How to create your own theme
-
-- [Documentation](https://github.com/Aliucord/documentation/blob/main/theme-dev)
-- [Theme maker](https://aliucord.com/theme-maker)
+    content: `**Note:** Reading the [Documentation](https://github.com/Aliucord/documentation/blob/main/theme-dev) and using the [Theme maker site](https://aliucord.com/theme-maker) can help you make your own theme.
 
 ## How to set a custom background
 
