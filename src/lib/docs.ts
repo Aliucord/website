@@ -237,7 +237,7 @@ Alternatively, you can search for another modified Discord client that uses the 
     title: "Old UI",
     content: `**Why does Aliucord use an old Discord version?**
 
-- React Native is very slow compared to Kotlin. RN is a framework for building apps using JavaScript, which is not as performant as Kotlin code. Discord's React Native version is known to have performance issues, especially on lower-end devices, because the app has been ported from iOS over to Android.
+- The new Discord app is React Native while the Discord version that Aliucord uses (126.21) is Kotlin. React Native is very slow compared to Kotlin. RN is a framework for building apps using JavaScript, which is not as performant as Kotlin code. Discord's React Native version is known to have performance issues, especially on lower-end devices, because the app has been ported from iOS over to Android.
 - Everything would need to be rewritten, wasting time, considering how bad the new Discord version is.
 - Aliucord developers don't like to work with the new one. [Notice from the AliucordRN repository](https://github.com/Aliucord/AliucordRN#-notice-)
 - If Aliucord ceases to exist, there wouldn't be any active clients using the good old Discord version.
