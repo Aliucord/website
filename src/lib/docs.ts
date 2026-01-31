@@ -101,7 +101,7 @@ You can also watch the [video instructions](https://github.com/user-attachments/
   },
   {
     title: "Beginner Guide",
-    content: `You can install Aliucord [here](https://github.com/Aliucord/Manager/releases/download/v1.1.1/aliucord-manager-v1.1.1.apk).
+    content: `You can install Aliucord [here](https://github.com/Aliucord/Manager/releases/download/v1.2.0/aliucord-manager-v1.2.0.apk).
 
 ## How to install plugins
 
