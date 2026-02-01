@@ -36,8 +36,8 @@ export function Footer() {
         </div>
         
         <div className="pt-12 border-t-2 border-border flex flex-col md:flex-row justify-between items-center gap-6 w-full">
-          <p className="text-muted-foreground font-bold italic">
-            &copy; {currentYear} Aliucord. Not affiliated with Discord Inc.
+          <p className="text-muted-foreground font-bold">
+            &copy; {currentYear} Aliucord Contributors. Not affiliated with Discord Inc.
           </p>
           <div className="flex gap-8 text-sm font-black tracking-widest text-muted-foreground">
             <a href="https://discord.gg/EsNDvBaHVU" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">Support Server</a>

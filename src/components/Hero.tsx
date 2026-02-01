@@ -41,9 +41,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8 font-medium leading-snug"
+          className="text-xl md:text-2xl text-foreground/60 max-w-3xl mx-auto mb-8 font-medium leading-snug"
         >
-          A mod for the Discord Android App
+          A mod for the legacy Discord Android App
         </motion.p>
 
         <motion.div
