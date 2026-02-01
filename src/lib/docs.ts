@@ -135,7 +135,7 @@ If you already have the plugin .zip, just follow two last steps.
 
 1. Go to any plugin repository ([like this one](https://github.com/Juby210/Aliucord-plugins))
 2. Click the branch button and select builds
-![branch selector](https://i.vgy.me/T4LDqj.png)
+![branch selector](https://raw.githubusercontent.com/yutaplug/Aliucord/main/docs/beginner/image.png)
 3. Click the [PluginName].zip of the plugin you want
 4. Click Raw, View raw or the download button to download the .zip file
 5. Using a file manager ([we recommend Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) ([F-Droid](https://f-droid.org/packages/me.zhanghai.android.files/))) move the downloaded .zip to the Aliucord/plugins folder
