@@ -148,6 +148,7 @@ If you already have the plugin .zip, just follow two last steps.
 This page only shows the most relevant/important changes for most Aliucord users, if you want to see more internal changes that are not that relevant for normal Aliucord users, see the [commits page](https://github.com/Aliucord/Aliucord/commits/main).
 
 ## 2.?.? (NOT AVAILABLE YET)
+- Allow installing plugins from link context menu
 - Fix "Hide Muted Channels" option accidentally hiding muted threads with unread mentions from channel list
 - Fix "Hide Muted Channels" option accidentally hiding channels that contain unread mentions
 - Remove sideloading block warning
