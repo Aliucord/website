@@ -73,8 +73,8 @@ export const GENERAL_DOCS: DocSection[] = [
 - Pronouns
 - New profile badges (quests, developer, etc.)
 - Avatar decorations
-- Guild tags (soon in core, wait for a version bump)
-- Nameplates (soon in core, wait for a version bump)
+- Guild tags
+- Nameplates
 
 ## Aliucord from storage
 
@@ -95,7 +95,6 @@ You can also watch the [video instructions](https://github.com/user-attachments/
 
 **Backports that use this method**
 
-- [Guild tags & Nameplates](https://nightly.link/Aliucord/Aliucord/workflows/build/main/build.zip)
 - [Display name styles](https://nightly.link/LavaDesu/Aliucord/workflows/build/feat%2Fdecor_displaynamestyles/build.zip?status=completed)
 - [Account Standing](https://nightly.link/omardotdev/aliucar/workflows/build/feat%2Faccount-standing/build.zip?status=completed)`
   },
@@ -107,7 +106,7 @@ You can also watch the [video instructions](https://github.com/user-attachments/
 
 1. Join the [Aliucord Discord server](https://discord.gg/EsNDvBaHVU)
 2. Make sure you are using the Aliucord app
-3. Go to [#plugins-list](https://discord.com/channels/811255666990907402/811275162715553823) or [#new-plugins](https://discord.com/channels/811255666990907402/845784407846813696) channels and hold any message (NOT THE LINK)
+3. Go to [#plugins-list](https://discord.com/channels/811255666990907402/811275162715553823) or [#new-plugins](https://discord.com/channels/811255666990907402/845784407846813696) channels and hold any message (or the link)
 4. Click on the first option ("Open Plugin Downloader" for #plugins-list and "Install [plugin name]" for #new-plugins)
 5. Install the plugin you want
 
@@ -147,7 +146,7 @@ If you already have the plugin .zip, just follow two last steps.
 
 This page only shows the most relevant/important changes for most Aliucord users, if you want to see more internal changes that are not that relevant for normal Aliucord users, see the [commits page](https://github.com/Aliucord/Aliucord/commits/main).
 
-## 2.?.? (NOT AVAILABLE YET)
+## 2.7.0 (CURRENT VERSION)
 - Allow installing plugins from link context menu
 - Fix "Hide Muted Channels" option accidentally hiding muted threads with unread mentions from channel list
 - Fix "Hide Muted Channels" option accidentally hiding channels that contain unread mentions
@@ -158,7 +157,7 @@ This page only shows the most relevant/important changes for most Aliucord users
 - Allow installing plugins from #bot-spam channel
 - Fix avatar decorations alignment in DMs list
 
-## 2.6.0 (CURRENT VERSION)
+## 2.6.0
 - Temporarily fix Voice Chat until March
 - Implement avatar decorations
 - Fix animated webp emojis not rendering
@@ -362,7 +361,7 @@ Final result should be file://storage/emulated/0/Example/Example.ttf
 
 ## UserBG
 - Make sure you have the plugin installed
-- Join the [UserBG server](https://discord.gg/TeRQEPb)
+- Join the [UserBG server](https://discord.gg/ECg96KZ3Fh)
 - Read #usrbg-guide before proceeding
 - Use the /bg command in any channel that you can type in
 - Add the image/gif you want
