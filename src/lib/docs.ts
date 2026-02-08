@@ -146,10 +146,14 @@ If you already have the plugin .zip, just follow two last steps.
 
 This page only shows the most relevant/important changes for most Aliucord users, if you want to see more internal changes that are not that relevant for normal Aliucord users, see the [commits page](https://github.com/Aliucord/Aliucord/commits/main).
 
+## 2.?.? (NOT AVAILABLE YET)
+- Allow disabling updater
+- Fix PluginDownloader duplicate bug
+
 ## 2.7.1 (CURRENT VERSION)
 - Support slowmode permission
-- Unhide when threads have unread mentions (fixes collapsing bug)
-- Account for admin/owner perms
+- Fix collapsing bug
+- Fix admin/owner perms to include new pins perm
 - Scan for repo links only in plugin channels
 
 ## 2.7.0
