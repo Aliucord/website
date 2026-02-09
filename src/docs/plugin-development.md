@@ -1,0 +1,1 @@
+The plugin development documentation has moved to GitHub. You can find it here: [Aliucord Documentation - Plugin Dev](https://github.com/Aliucord/documentation/tree/main/plugin-dev)
