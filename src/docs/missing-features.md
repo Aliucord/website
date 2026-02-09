@@ -21,4 +21,4 @@ Compared to the RN client.
 |Adding friends|Adding friends from the "Add friend" page
 |Message requests|Message requests
 
-For a list of backported features, see the [Backports](/documentation/backports) page.
+For a list of backported features, see the [Backports](/documentation#backports) page.
