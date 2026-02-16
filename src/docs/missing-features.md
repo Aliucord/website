@@ -1,4 +1,4 @@
-Compared to the RN client.
+Compared to the React Native client.
 
 |Feature|Notes|
 |-|-|
