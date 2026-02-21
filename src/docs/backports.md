@@ -42,6 +42,7 @@
 |Copy channel link|[CopyLinks](https://github.com/LampDelivery/AliucordPlugins/raw/builds/CopyLinks.zip)|
 |Message grouping|[Clump](https://github.com/LavaDesu/Awoocord/raw/builds/Clump.zip)|
 |Profile themes|[NewProfiles](https://github.com/Juby210/Aliucord-plugins/raw/builds/NewProfiles.zip)|
+|DM previews|[Glance](https://github.com/cillynder/Awoocord/raw/builds/Glance.zip)|
 
 ## Built-in to Aliucord
 
