@@ -2,7 +2,7 @@ To install them, download the plugin zip and move it to the Aliucord/plugins fol
 
 |Fork|Download|
 |-|-|
-|AudioPlayer fork by Halkion fixes crashes and some bugs with audio files.|[Download AudioPlayer fork](https://github.com/Archimedes9500/Halkiion-rushiiMachine-aliucord-plugins/raw/builds/AudioPlayer.zip)|
+|AudioPlayer fork by Halkion fixes crashes and some bugs with audio files.|[Download AudioPlayer fork](https://github.com/yutaplug/Aliucord/raw/builds/AudioPlayer.zip)|
 |Waifuim fork by Serinova fixes the command being fully broken.|[Download Waifuim fork](https://github.com/OasisVee/AliucordPlugins3/raw/builds/Waifuim.zip)|
 |NekosLife fork by Serinova fixes the command being fully broken.|[Download NekosLife fork](https://github.com/OasisVee/AliucordPlugins3/raw/builds/NekosLife.zip)|
 |CheckLinks fork by Serinova fixes the majority of the urls not being checked (VirusTotal changed its link structure).|[Download CheckLinks fork](https://github.com/OasisVee/AliucordPlugins2/raw/builds/CheckLinks.zip)|
