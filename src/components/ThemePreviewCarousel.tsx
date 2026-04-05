@@ -83,16 +83,14 @@ export function ThemePreviewCarousel() {
               <CarouselPrevious className="-left-6 md:-left-10 absolute z-10 bg-card/90 border-border hover:bg-card" />
               <CarouselContent>
                 {THEME_PREVIEWS.map((preview) => (
-                  <CarouselItem key={preview.src} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="material-card p-0 overflow-hidden h-full flex items-stretch bg-transparent border-none">
-                      <img
-                        src={preview.src}
-                        alt={preview.name}
-                        loading="lazy"
-                        className="w-full h-full aspect-[16/9] object-cover object-center transition-transform duration-500 hover:scale-[1.01] rounded-sm md:rounded-lg"
-                        style={{ minHeight: 0, minWidth: 0 }}
-                      />
-                    </div>
+                  <CarouselItem key={preview.src} className="basis-full">
+                    <img
+                      src={preview.src}
+                      alt={preview.name}
+                      loading="lazy"
+                      className="w-full h-auto max-h-[60vh] md:max-h-[70vh] object-cover object-center transition-transform duration-500 hover:scale-[1.01]"
+                      style={{ display: 'block', borderRadius: 0, margin: 0, padding: 0 }}
+                    />
                   </CarouselItem>
                 ))}
               </CarouselContent>
