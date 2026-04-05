@@ -1,6 +1,7 @@
 **Legend**
 - 💣: Broken or partially broken
 - 🚧: Still in development or beta
+- ⚠️: Maintenance mode (unusable/broken or can compromise your account)
 
 **Note:** To install the plugins from here you need to click the plugin name, it will download the plugin .zip, now just move it to the Aliucord/plugins folder using a file manager & restart Aliucord in case it was open.
 
@@ -9,7 +10,7 @@
 |Feature|Plugin Name|
 |-|-|
 |Voice messages|[VoiceMessages](https://github.com/mantikafasi/AliucordPlugins/raw/builds/VoiceMessages.zip)|
-|Playing Audio files|[AudioPlayer](https://github.com/Archimedes9500/Halkiion-rushiiMachine-aliucord-plugins/raw/builds/AudioPlayer.zip) (fork)|
+|Playing Audio files|[AudioPlayer](https://github.com/yutaplug/Aliucord/raw/builds/AudioPlayer.zip) (fork)|
 |Forwarding messages|[ForwardMessages](https://github.com/reisxd/AliucordPlugins/raw/builds/ForwardMessages.zip)|
 |Closing DMs from bottomsheet|[CloseDMs](https://github.com/reisxd/AliucordPlugins/raw/builds/ForwardMessages.zip)|
 |Bot commands|[SlashCommandsFix](https://github.com/LavaDesu/Awoocord/raw/builds/SlashCommandsFixBeta.zip) 🚧|
@@ -17,9 +18,9 @@
 |Quests|[ViewQuests](https://github.com/nyxiereal/AliucordPlugins/raw/builds/ViewQuests.zip) 🚧|
 |Summaries|[Summaries](https://github.com/MCausc78/RNSucks/raw/builds/Summaries.zip) 🚧|
 |Embed playing|[PlayableEmbeds](https://github.com/yutaplug/Aliucord/raw/main/stuff/PlayableEmbeds.zip) (fork)|
-|Swiping to reply|[SwipeToReply](https://github.com/RazerTexz/My-plugins/raw/builds/SwipeToReply.zip)|
+|Swiping to reply|[SwipeToReply](https://github.com/RazerTexz/My-plugins/raw/builds/SwipeToReply.zip) ([TapTap](https://github.com/Vendicated/AliucordPlugins/raw/builds/TapTap.zip) is recommended instead)|
 |Nick command|[SlashNick](https://github.com/rushiiMachine/aliucord-plugins/raw/builds/SlashNick.zip)|
-|Changing pronouns & display name|[MoreProfile](https://github.com/Halkiion/aliucord-plugins/raw/builds/MoreProfile.zip)|
+|Changing pronouns & display name|[MoreProfile](https://github.com/Halkiion/aliucord-plugins/raw/builds/MoreProfile.zip) ⚠️|
 |Duplicate channel|[CloneChannels](https://github.com/DiamondMiner88/aliucord-plugins/raw/builds/CloneChannels.zip)|
 |Discovery|[Discovery](https://github.com/wingio/plugins/raw/builds/Discovery.zip) 💣|
 |Devices page|[Sessions](https://github.com/wingio/plugins/raw/builds/Sessions.zip) 💣|
@@ -39,7 +40,9 @@
 |Channel browser|[ChannelBrowser](https://github.com/LampDelivery/AliucordPlugins/raw/builds/ChannelBrowser.zip)|
 |Compact links|[CompactLinks](https://github.com/LampDelivery/AliucordPlugins/raw/builds/CompactLinks.zip)|
 |Copy channel link|[CopyLinks](https://github.com/LampDelivery/AliucordPlugins/raw/builds/CopyLinks.zip)|
-|Message grouping|[Clump](https://github.com/LavaDesu/Awoocord/raw/builds/Clump.zip)
+|Message grouping|[Clump](https://github.com/LavaDesu/Awoocord/raw/builds/Clump.zip)|
+|Profile themes|[NewProfiles](https://github.com/Juby210/Aliucord-plugins/raw/builds/NewProfiles.zip)|
+|DM previews|[Glance](https://github.com/cillynder/Awoocord/raw/builds/Glance.zip)|
 
 ## Built-in to Aliucord
 

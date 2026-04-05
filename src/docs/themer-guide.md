@@ -17,9 +17,8 @@ First of all, you need to enable transparency in Themer settings (chat, chat & s
   - Find the image/gif file
   - Click the 3 dots next to it & press Copy path
   - Go to Themer settings → your theme → Background & paste it
-  - Add file:/ at the start
-
-Final result should be file://storage/emulated/0/Example/Example.jpg
+  - Add file:// at the start
+  - Final result should be file:///storage/emulated/0/Example/Example.jpg
 
 GitLab, Imgbb & Imgur also work.
 
@@ -41,9 +40,8 @@ First of all, you need to enable the Enable Custom Fonts option in Themer settin
   - Find the font file
   - Click the 3 dots next to it & press Copy path
   - Go to Themer settings → your theme → Fonts & paste it where the asterisk is
-  - Add file:/ at the start
-
-Final result should be file://storage/emulated/0/Example/Example.ttf
+  - Add file:// at the start
+  - Final result should be file:///storage/emulated/0/Example/Example.ttf
 
 ## Why does my background image not work
 
