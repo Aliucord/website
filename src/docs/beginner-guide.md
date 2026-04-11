@@ -1,11 +1,9 @@
-You can install Aliucord [here](https://github.com/Aliucord/Manager/releases/download/v1.2.1/aliucord-manager-v1.2.1.apk).
-
 ## How to install plugins
 
 1. Join the [Aliucord Discord server](https://discord.gg/EsNDvBaHVU)
 2. Make sure you are using the Aliucord app
-3. Go to [#plugins-list](https://discord.com/channels/811255666990907402/811275162715553823) or [#new-plugins](https://discord.com/channels/811255666990907402/845784407846813696) channels and hold any message or link
-4. Click on "View [Author]'s Plugins" (for #new-plugins, if you hold message or link you can directly install the plugin you want by pressing "Install [Plugin name]")
+3. Go to #plugins-list or #new-plugins channels and hold any message or link
+4. Click on `View [Author]'s Plugins` for #plugins-list or `Install [Plugin name]` for #new-plugins
 5. Install the plugin you want
 
 **Tips:**
@@ -16,13 +14,10 @@ You can install Aliucord [here](https://github.com/Aliucord/Manager/releases/dow
 
 1. Join the [Aliucord Discord server](https://discord.gg/EsNDvBaHVU)
 2. Make sure you are using the Aliucord app
-3. Install the [Themer plugin](https://raw.githubusercontent.com/Vendicated/AliucordPlugins/builds/Themer.zip) (move the .zip to Aliucord/plugins folder & restart app)
-4. Go to [#themes](https://discord.com/channels/811255666990907402/824357609778708580) channel and hold any message (NOT THE LINK)
+3. Install "Themer" plugin (can be found in #bot-spam channel with `!plugins themer` command)
+4. Go to #themes channel and hold any message (NOT THE LINK)
 5. Click on the first option ("Install [Theme name]")
-
-**Tips:**
-- After installing a theme you should go to Themer settings to enable it.
-- Themes require an app restart to work properly.
+6. Go to Themer plugin settings and enable the theme
 
 ## How to install plugins manually
 
