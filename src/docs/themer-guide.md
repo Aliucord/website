@@ -4,6 +4,8 @@
 
 First of all, you need to enable transparency in Themer settings (chat, chat & settings). If you want full transparency, you need to use the template found below.
 
+**ALLOWED HOSTS:** GitHub, GitLab, Imgbb, Imgur, Locally (this one is not a website but your local files).
+
 **GitHub:**
   - Create a GitHub account
   - Create a repo (make sure it's public)
@@ -18,10 +20,7 @@ First of all, you need to enable transparency in Themer settings (chat, chat & s
   - Click the 3 dots next to it & press Copy path
   - Go to Themer settings → your theme → Background & paste it
   - Add file:/ at the start
-
-Final result should be file://storage/emulated/0/Example/Example.jpg
-
-GitLab, Imgbb & Imgur also work.
+  - Final result should be file://storage/emulated/0/Example/Example.jpg
 
 ## How to set a custom font
 
@@ -42,8 +41,7 @@ First of all, you need to enable the Enable Custom Fonts option in Themer settin
   - Click the 3 dots next to it & press Copy path
   - Go to Themer settings → your theme → Fonts & paste it where the asterisk is
   - Add file:/ at the start
-
-Final result should be file://storage/emulated/0/Example/Example.ttf
+  - Final result should be file://storage/emulated/0/Example/Example.ttf
 
 ## Why does my background image not work
 
