@@ -10,6 +10,7 @@ import { markdown as oldUi } from "@/docs/old-ui.md";
 import { markdown as sounds } from "@/docs/sounds.md";
 import { markdown as themerGuide } from "@/docs/themer-guide.md";
 import { markdown as userPfpBg } from "@/docs/user-pfp-bg.md";
+import { markdown as logcat } from "@/docs/logcat.md";
 
 export interface DocSection {
   title: string;
