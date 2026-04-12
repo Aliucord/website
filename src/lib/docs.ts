@@ -70,5 +70,9 @@ export const GENERAL_DOCS: DocSection[] = [
   {
     title: "UserPFP/BG",
     content: userPfpBg
+  },
+  {
+    title: "Logcat",
+    content: logcat
   }
 ];
