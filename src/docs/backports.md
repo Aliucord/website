@@ -3,7 +3,7 @@
 - 🚧: Still in development or beta
 - ⚠️: Maintenance mode (unusable/broken or can compromise your account)
 
-**Note:** To install the plugins from here you need to click the plugin name, it will download the plugin .zip, now just move it to the Aliucord/plugins folder using a file manager & restart Aliucord in case it was open.
+**Note:** To install the plugins from here you need to click the plugin name, it will download the plugin .zip, now just move it to the `Aliucord/plugins` folder using a file manager & restart Aliucord in case it was open.
 
 ## Plugins
 
@@ -50,7 +50,7 @@
 - Viewing forwarded messages
 - Upload size (new 10mb limit for non-nitro users)
 - Display names
-- Pomelo usernames (@username instead of username#1234)
+- Pomelo usernames (`@username` instead of `username#1234`)
 - Polls
 - Pronouns
 - New profile badges (quests, developer, etc.)
@@ -62,13 +62,13 @@
 
 **Notes:**
 - This method is used for core features that are not merged yet.
-- You can't use multiple .ZIPs at once, you'll need to decide which features you prefer.
+- You can't use multiple `.zip's` at once, you'll need to decide which features you prefer.
 
 **How to use Aliucord from storage**
 
-- Download the .zip file from the links below
-- Extract it and find Aliucord.zip inside it
-- Move Aliucord.zip to your Aliucord folder
+- Download the `.zip` file from the links below
+- Extract it and find `Aliucord.zip` inside it
+- Move `Aliucord.zip` to your `Aliucord` folder
 - Open Aliucord settings
 - Enable [Developer Mode](https://github.com/user-attachments/assets/ee6a45bd-08a5-4bf8-af39-6d03b9d969a4) & [Aliucord from storage](https://github.com/user-attachments/assets/37f9f074-741e-46e1-8162-f753f4af8b30)
 - Restart Aliucord
