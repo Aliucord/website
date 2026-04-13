@@ -2,7 +2,7 @@ Compared to the React Native client.
 
 |Feature|Notes|
 |-|-|
-|Apps|This means games like /wordle (ny times)
+|Apps|This means games like `/wordle` (ny times)
 |Shop|Discord decoration/orbs store
 |Ignoring users|Ignoring users (blocking without removing as friends)
 |Super reactions|The fancy reactions that are more annoying than normal ones
