@@ -4,7 +4,7 @@
 
 1. Join the [Aliucord Discord server](https://discord.gg/EsNDvBaHVU)
 2. Make sure you are using the Aliucord app
-3. Go to #plugins-list or #new-plugins channels and hold any message or link
+3. Go to `#plugins-list` or `#new-plugins` channels and hold any message or link
 4. Click on `View [Author]'s Plugins` for #plugins-list or `Install [Plugin name]` for #new-plugins
 5. Install the plugin you want
 
@@ -18,8 +18,8 @@
 
 1. Join the [Aliucord Discord server](https://discord.gg/EsNDvBaHVU)
 2. Make sure you are using the Aliucord app
-3. Install "Themer" plugin (can be found in `#bot-spam` channel with `!plugins themer` command)
-4. Go to #themes channel and hold any message (NOT THE LINK)
+3. Install `Themer` plugin (can be found in `#bot-spam` channel with `!plugins themer` command)
+4. Go to `#themes` channel and hold any message (NOT THE LINK)
 5. Click on the first option `Install [Theme name]`
 6. Go to Themer plugin settings and enable the theme
 
