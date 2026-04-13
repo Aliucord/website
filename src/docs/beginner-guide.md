@@ -1,11 +1,11 @@
 ## How to install plugins
 
-**IF YOU DON'T HAVE THE OPTION TO INSTALL PLUGINS, READ THE PINNED MESSAGE IN #SUPPORT CHANNEL**
+**IF YOU DON'T HAVE THE OPTION TO INSTALL PLUGINS, READ THE PINNED MESSAGE IN `#SUPPORT` CHANNEL**
 
 1. Join the [Aliucord Discord server](https://discord.gg/EsNDvBaHVU)
 2. Make sure you are using the Aliucord app
 3. Go to #plugins-list or #new-plugins channels and hold any message or link
-4. Click on View [Author]'s Plugins for #plugins-list or Install [Plugin name] for #new-plugins
+4. Click on `View [Author]'s Plugins` for #plugins-list or `Install [Plugin name]` for #new-plugins
 5. Install the plugin you want
 
 **Tips:**
@@ -18,9 +18,9 @@
 
 1. Join the [Aliucord Discord server](https://discord.gg/EsNDvBaHVU)
 2. Make sure you are using the Aliucord app
-3. Install "Themer" plugin (can be found in #bot-spam channel with "!plugins themer" command)
+3. Install "Themer" plugin (can be found in `#bot-spam` channel with `!plugins themer` command)
 4. Go to #themes channel and hold any message (NOT THE LINK)
-5. Click on the first option ("Install [Theme name]")
+5. Click on the first option `Install [Theme name]`
 6. Go to Themer plugin settings and enable the theme
 
 ## How to install plugins manually
@@ -30,8 +30,8 @@ Required for [#unmaintained-plugins](https://discord.com/channels/81125566699090
 If you already have the plugin .zip, just follow two last steps.
 
 1. Go to any plugin repository ([like this one](https://github.com/Juby210/Aliucord-plugins))
-2. Click the branch button and select builds
-3. Click the [PluginName].zip of the plugin you want
-4. Click Raw, View raw or the download button to download the .zip file
+2. Click the branch button and select `builds`
+3. Click the `[PluginName].zip` of the plugin you want
+4. Click `Raw`, `View raw` or the download button to download the `.zip` file
 5. Using a file manager ([we recommend Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files) ([F-Droid](https://f-droid.org/packages/me.zhanghai.android.files/))) move the downloaded .zip to the Aliucord/plugins folder
 6. Restart Aliucord
