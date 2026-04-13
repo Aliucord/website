@@ -1,8 +1,8 @@
-Compared to the RN client.
+Compared to the React Native client.
 
 |Feature|Notes|
 |-|-|
-|Apps|This means games like /wordle (ny times)
+|Apps|This means games like `/wordle` (ny times)
 |Shop|Discord decoration/orbs store
 |Ignoring users|Ignoring users (blocking without removing as friends)
 |Super reactions|The fancy reactions that are more annoying than normal ones
@@ -21,4 +21,4 @@ Compared to the RN client.
 |Adding friends|Adding friends from the "Add friend" page
 |Message requests|Message requests
 
-For a list of backported features, see the [Backports](/guides/backports) page.
+For a list of backported features, see the [Backports](/documentation/#backports) page.

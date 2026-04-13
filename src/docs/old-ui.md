@@ -9,5 +9,5 @@
 Bluecord is also a modded client for the old version of Discord, but the main developer is not a good person, so we don't recommend using it.<br>
 Source: <a href="https://drive.google.com/drive/mobile/folders/1Y2m2lMSpN3GlOcXyceaO88Ljnr8xuNcp">Google Drive</a></p>
 
-- Features from new Discord versions can be backported to the old one. [What does backporting mean?](https://en.wikipedia.org/wiki/Backporting)
-- Modded clients for the new Discord version already exist, such as [Kettu](https://www.raincord.dev/kettu) or [Shiggycord](https://shiggycord.dev).
+- Features from new Discord versions can be backported to the old one, and [many already have been](/documentation/#backports). [What does backporting mean?](https://en.wikipedia.org/wiki/Backporting)
+- Modded clients for the new Discord version already exist, such as [Kettu/Rain](https://raincord.dev).
