@@ -41,9 +41,11 @@
 |Compact links|[CompactLinks](https://github.com/LampDelivery/AliucordPlugins/raw/builds/CompactLinks.zip)|
 |Copy channel link|[CopyLinks](https://github.com/LampDelivery/AliucordPlugins/raw/builds/CopyLinks.zip)|
 |Message grouping|[Clump](https://github.com/LavaDesu/Awoocord/raw/builds/Clump.zip)|
-|Profile colors|[ModernProfiles](https://github.com/l6t9/AliucordPlugins/raw/builds/ModernProfiles.zip)|
 |DM previews|[Glance](https://github.com/cillynder/Awoocord/raw/builds/Glance.zip)|
+|Profile colors|[ModernProfiles](https://github.com/l6t9/AliucordPlugins/raw/builds/ModernProfiles.zip)|
 |Evolving Nitro badges|[ModernNitroIcons](https://github.com/Ushie/Aliucord-Plugins/raw/builds/ModernNitroIcons.zip)|
+|New member badge|[NewMemberBadge](https://github.com/Ushie/Aliucord-Plugins/raw/builds/NewMemberBadge.zip)|
+|Friend nicknames|[NativeFriendNicknames](https://github.com/miaaaa0a/aliucord-plugins/raw/builds/NativeFriendNicknames.zip)|
 
 ## Built-in to Aliucord
 
