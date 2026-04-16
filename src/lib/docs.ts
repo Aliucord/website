@@ -1,7 +1,7 @@
 import { markdown as pluginDev } from "@/docs/plugin-development.md";
 import { markdown as themeDev } from "@/docs/theme-development.md";
-import { markdown as backports } from "@/docs/backports.md";
 import { markdown as beginnerGuide } from "@/docs/beginner-guide.md";
+import { markdown as backports } from "@/docs/backports.md";
 import { markdown as changelog } from "@/docs/changelog.md";
 import { markdown as forks } from "@/docs/forks.md";
 import { markdown as missingFeatures } from "@/docs/missing-features.md";
@@ -11,6 +11,7 @@ import { markdown as sounds } from "@/docs/sounds.md";
 import { markdown as themerGuide } from "@/docs/themer-guide.md";
 import { markdown as userPfpBg } from "@/docs/user-pfp-bg.md";
 import { markdown as logcat } from "@/docs/logcat.md";
+import { markdown as pluginFaq } from "@/docs/plugin-faq.md";
 
 export interface DocSection {
   title: string;
@@ -33,12 +34,12 @@ export const THEME_DOCS: DocSection[] = [
 
 export const GENERAL_DOCS: DocSection[] = [
   {
-    title: "Backports",
-    content: backports
-  },
-  {
     title: "Beginner Guide",
     content: beginnerGuide
+  },
+  {
+    title: "Backports",
+    content: backports
   },
   {
     title: "Changelog",
@@ -75,5 +76,9 @@ export const GENERAL_DOCS: DocSection[] = [
   {
     title: "Logcat",
     content: logcat
+  },
+    {
+    title: "Plugin FAQ",
+    content: pluginFaq
   }
 ];
