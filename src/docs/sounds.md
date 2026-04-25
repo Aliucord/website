@@ -1,4 +1,4 @@
-**How to use CustomSounds, StartupSound and NoticeSound plugins**
+**How to use StartupSound & NoticeSound plugins**
 
 **GitHub:**
   - Create a GitHub account
