@@ -1,11 +1,12 @@
 This page only shows the most relevant/important changes for most Aliucord users, if you want to see more internal changes that are not that relevant for normal Aliucord users, see the [commits page](https://github.com/Aliucord/Aliucord/commits/main).
 
-## 2.?.? (NOT AVAILABLE YET)
+## 2.8.0 (CURRENT VERSION)
+- Load settings properly
 - Fix Aliucord dir not being created
 - Fix various PluginDownloader bugs
 - Allow disabling updater
 
-## 2.7.1 (CURRENT VERSION)
+## 2.7.1
 - Support slowmode permission
 - Fix collapsing bug
 - Fix admin/owner perms to include new pins perm
