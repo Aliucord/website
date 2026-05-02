@@ -1,7 +1,5 @@
 ## How to install plugins
 
-**If you don't have the option to install plugins, read the pinned message in `#support` channel**
-
 1. Join the [Aliucord Discord server](https://discord.gg/EsNDvBaHVU)
 2. Make sure you are using the Aliucord app
 3. Go to `#plugins-list` or `#new-plugins` channels and hold any message or link
