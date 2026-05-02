@@ -33,7 +33,7 @@
 |Favorite channels|[FavoriteChannels](https://github.com/zt64/aliucord-plugins/raw/builds/FavoriteChannels.zip)|
 |New emojis|[NewEmojis](https://github.com/Juby210/Aliucord-plugins/raw/builds/NewEmojis.zip)|
 |Favorite GIFs|[Frecents](https://github.com/zt64/aliucord-plugins/raw/builds/Frecents.zip)|
-|Member since|[UserDetails](https://github.com/Juby210/Aliucord-plugins/raw/builds/UserDetails.zip)|
+|Member since|[BetterUserDetails](https://github.com/Ushie/Aliucord-Plugins/raw/builds/BetterUserDetails.zip)|
 |DMTabsV2|[DMTabs](https://github.com/OmegaSunkey/awesomeplugins/raw/builds/DMTabs.zip)|
 |Remove attachments individually|[AttachmentRemover](https://github.com/RazerTexz/My-plugins/raw/builds/AttachmentRemover.zip)|
 |Silent messages|[SilentMessages](https://github.com/RazerTexz/My-plugins/raw/builds/SilentMessages.zip)|
@@ -46,6 +46,12 @@
 |Evolving Nitro badges|[ModernNitroIcons](https://github.com/Ushie/Aliucord-Plugins/raw/builds/ModernNitroIcons.zip)|
 |New member badge|[NewMemberBadge](https://github.com/Ushie/Aliucord-Plugins/raw/builds/NewMemberBadge.zip)|
 |Friend nicknames|[NativeFriendNicknames](https://github.com/miaaaa0a/aliucord-plugins/raw/builds/NativeFriendNicknames.zip)|
+|Muting voice channels|[MuteVoiceAndStageChannels](https://github.com/Ushie/Aliucord-Plugins/raw/builds/MuteVoiceAndStageChannels.zip)|
+|Display name styles|[DisplayNameStyles](https://github.com/cillynder/Awoocord/raw/builds/DisplayNameStyles.zip)|
+|Avatar in dm header|[AvatarInHeader](https://github.com/Ushie/Aliucord-Plugins/raw/builds/AvatarInHeader.zip)|
+|Persist message drafts|[PersistMessageDrafts](https://github.com/Ushie/Aliucord-Plugins/raw/builds/PersistMessageDrafts.zip)|
+|Fix attachment limit|[AttachmentLimitFix](https://github.com/Ushie/Aliucord-Plugins/raw/builds/AttachmentLimitFix.zip)|
+|Showing mentions inside muted-hidden channels|[ShowHiddenMutedChannelsWithMentions](https://github.com/Ushie/Aliucord-Plugins/raw/builds/ShowHiddenMutedChannelsWithMentions.zip)|
 
 ## Built-in to Aliucord
 
