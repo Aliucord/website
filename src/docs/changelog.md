@@ -2,6 +2,7 @@ This page only shows the most relevant/important changes for most Aliucord users
 
 ## 2.9.0 (CURRENT VERSION)
 - Fix CoreUpdater and PluginUpdater
+- Allow muted DM's (including Group Channels) with unread mentions to appear in side bar
 
 ## 2.8.0
 - Load settings properly
