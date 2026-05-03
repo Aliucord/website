@@ -1,6 +1,9 @@
 This page only shows the most relevant/important changes for most Aliucord users, if you want to see more internal changes that are not that relevant for normal Aliucord users, see the [commits page](https://github.com/Aliucord/Aliucord/commits/main).
 
-## 2.8.0 (CURRENT VERSION)
+## 2.9.0 (CURRENT VERSION)
+- Fix CoreUpdater and PluginUpdater
+
+## 2.8.0
 - Load settings properly
 - Fix Aliucord dir not being created
 - Fix various PluginDownloader bugs
