@@ -1,6 +1,9 @@
 This page only shows the most relevant/important changes for most Aliucord users, if you want to see more internal changes that are not that relevant for normal Aliucord users, see the [commits page](https://github.com/Aliucord/Aliucord/commits/main).
 
-## 2.9.0 (CURRENT VERSION)
+## 2.9.1 (CURRENT VERSION)
+- Fix scrolling bug in dm list
+
+## 2.9.0
 - Fix CoreUpdater and PluginUpdater
 - Allow muted DM's (including Group Channels) with unread mentions to appear in side bar
 
