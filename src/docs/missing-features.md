@@ -11,14 +11,11 @@ Compared to the React Native client.
 |Onboarding|Server onboarding
 |Managing join requests|Managing join requests
 |Family center|Family center
-|Post tagging|Adding tags to forums posts
 |In-game friends|In-game friends
-|Media channels|"They're a thing apparently"
 |Remixing images|Remixing images
 |Soundboard|Soundboard in VCs
 |Security keys|Security key to login
 |Gradient roles|Roles with fancy styles
-|Adding friends|Adding friends from the "Add friend" page
 |Message requests|Message requests
 
 For a list of backported features, see the [Backports](/documentation/#backports) page.

@@ -52,6 +52,9 @@
 |Persist message drafts|[PersistMessageDrafts](https://github.com/Ushie/Aliucord-Plugins/raw/builds/PersistMessageDrafts.zip)|
 |Fix attachment limit|[AttachmentLimitFix](https://github.com/Ushie/Aliucord-Plugins/raw/builds/AttachmentLimitFix.zip)|
 |Showing mentions inside muted-hidden channels|[ShowHiddenMutedChannelsWithMentions](https://github.com/Ushie/Aliucord-Plugins/raw/builds/ShowHiddenMutedChannelsWithMentions.zip)|
+|Adding friends by username|[FriendFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/FriendFix.zip)|
+|Adding tags to forums|[ForumTagFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/ForumTagFix.zip)|
+|Media channels|[MediaChannelFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/MediaChannelFix.zip)|
 
 ## Built-in to Aliucord
 
