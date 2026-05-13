@@ -1,6 +1,14 @@
 This page only shows the most relevant/important changes for most Aliucord users, if you want to see more internal changes that are not that relevant for normal Aliucord users, see the [commits page](https://github.com/Aliucord/Aliucord/commits/main).
 
-## 2.9.1 (CURRENT VERSION)
+## 2.9.2 (CURRENT VERSION)
+- Disable sticker suggestions by default
+- Treat invalid local plugin versions as outdated
+- Fix ghost unread indicator in guilds with forum channels
+- Remove bio height limit
+- Support autocomplete entries with the same name
+- Fix mismatching clock data (e.g date formatters breaking, old timeouts suddenly being reapplied)
+
+## 2.9.1
 - Fix scrolling bug in dm list
 
 ## 2.9.0
