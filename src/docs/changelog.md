@@ -1,6 +1,9 @@
 This page only shows the most relevant/important changes for most Aliucord users, if you want to see more internal changes that are not that relevant for normal Aliucord users, see the [commits page](https://github.com/Aliucord/Aliucord/commits/main).
 
-## 2.9.2 (CURRENT VERSION)
+## 2.9.3 (CURRENT VERSION)
+- Revert "Support autocomplete entries with the same name" due to it causing app to be slow
+
+## 2.9.2
 - Disable sticker suggestions by default
 - Treat invalid local plugin versions as outdated
 - Fix ghost unread indicator in guilds with forum channels
