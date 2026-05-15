@@ -1,6 +1,9 @@
 This page only shows the most relevant/important changes for most Aliucord users, if you want to see more internal changes that are not that relevant for normal Aliucord users, see the [commits page](https://github.com/Aliucord/Aliucord/commits/main).
 
-## 2.9.3 (CURRENT VERSION)
+## 2.9.4 (CURRENT VERSION)
+- Fix crash when opening update notification and fix duplicate plugin entries
+
+## 2.9.3
 - Revert "Support autocomplete entries with the same name" due to it causing app to be slow
 
 ## 2.9.2
