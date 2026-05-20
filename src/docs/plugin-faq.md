@@ -9,7 +9,7 @@
 # "Is there a plugin to fix...?"
 |Feature/s|Plugin/s|
 |-|-|
-|Sending voice messages and playing them|[VoiceMessages](https://github.com/mantikafasi/AliucordPlugins/raw/builds/VoiceMessages.zip) & [AudioPlayer fork](https://github.com/Archimedes9500/Halkiion-rushiiMachine-aliucord-plugins/raw/builds/AudioPlayer.zip)
+|Sending voice messages and playing them|[VoiceMessages](https://github.com/mantikafasi/AliucordPlugins/raw/builds/VoiceMessages.zip) & [AudioPlayer](https://github.com/mantikafasi/AliucordPlugins/raw/builds/AudioPlayer.zip)
 |Using bot commands and seeing bot embeds|[SlashCommandsFixBeta](https://github.com/cillynder/Awoocord/raw/builds/SlashCommandsFixBeta.zip) & [ComponentsV2Beta](https://github.com/LavaDesu/Awoocord/raw/builds/ComponentsV2Beta.zip)
 |#, ##, ### headers, -# subtext and `[]()` hyperlinks|[MarkdownFix](https://github.com/yutaplug/yutaplugins/raw/builds/MarkdownFix.zip)
 |Opening links in Aliucord instead of Discord/browser|[OpenLinksInApp](https://github.com/Canny1913/AliuPlugins/raw/builds/OpenLinksInApp.zip)
