@@ -11,7 +11,7 @@
 |-|-|
 |Voice messages|[VoiceMessages](https://github.com/mantikafasi/AliucordPlugins/raw/builds/VoiceMessages.zip)|
 |Playing Audio files|[AudioPlayer](https://github.com/mantikafasi/AliucordPlugins/raw/builds/AudioPlayer.zip)|
-|Forwarding messages|[MessageForwarder](https://github.com/mantikafasi/AliucordPlugins/blob/builds/MessageForwarder.zip)|
+|Forwarding messages|[ForwardMessages](https://github.com/Ushie/Aliucord-Plugins/raw/builds/ForwardMessages.zip)|
 |Closing DMs from bottomsheet|[CloseDMs](https://github.com/reisxd/AliucordPlugins/raw/builds/ForwardMessages.zip)|
 |Bot commands|[SlashCommandsFix](https://github.com/LavaDesu/Awoocord/raw/builds/SlashCommandsFixBeta.zip) 🚧|
 |Bot embeds|[ComponentsV2](https://github.com/LavaDesu/Awoocord/raw/builds/ComponentsV2Beta.zip) 🚧|
