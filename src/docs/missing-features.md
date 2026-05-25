@@ -12,7 +12,6 @@ Compared to the React Native client.
 |Managing join requests|Managing join requests
 |Family center|Family center
 |In-game friends|In-game friends
-|Remixing images|Remixing images
 |Soundboard|Soundboard in VCs
 |Security keys|Security key to login
 |Gradient roles|Roles with fancy styles

@@ -11,7 +11,7 @@
 |-|-|
 |Voice messages|[VoiceMessages](https://github.com/mantikafasi/AliucordPlugins/raw/builds/VoiceMessages.zip)|
 |Playing Audio files|[AudioPlayer](https://github.com/mantikafasi/AliucordPlugins/raw/builds/AudioPlayer.zip)|
-|Forwarding messages|[ForwardMessages](https://github.com/reisxd/AliucordPlugins/raw/builds/ForwardMessages.zip)|
+|Forwarding messages|[MessageForwarder](https://github.com/mantikafasi/AliucordPlugins/blob/builds/MessageForwarder.zip)|
 |Closing DMs from bottomsheet|[CloseDMs](https://github.com/reisxd/AliucordPlugins/raw/builds/ForwardMessages.zip)|
 |Bot commands|[SlashCommandsFix](https://github.com/LavaDesu/Awoocord/raw/builds/SlashCommandsFixBeta.zip) 🚧|
 |Bot embeds|[ComponentsV2](https://github.com/LavaDesu/Awoocord/raw/builds/ComponentsV2Beta.zip) 🚧|
@@ -55,6 +55,7 @@
 |Adding friends by username|[FriendFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/FriendFix.zip)|
 |Adding tags to forums|[ForumTagFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/ForumTagFix.zip)|
 |Media channels|[MediaChannelFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/MediaChannelFix.zip)|
+|Media remix|[PhotoEditor](https://github.com/mantikafasi/AliucordPlugins/raw/builds/PhotoEditor.zip)|
 
 ## Built-in to Aliucord
 
