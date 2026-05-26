@@ -56,6 +56,7 @@
 |Adding tags to forums|[ForumTagFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/ForumTagFix.zip)|
 |Media channels|[MediaChannelFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/MediaChannelFix.zip)|
 |Media remix|[PhotoEditor](https://github.com/mantikafasi/AliucordPlugins/raw/builds/PhotoEditor.zip)|
+|Onboarding|[FixOnboardingFork](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/FixOnboardingFork.zip)|
 
 ## Built-in to Aliucord
 
