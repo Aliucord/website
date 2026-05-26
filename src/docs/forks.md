@@ -10,4 +10,4 @@ To install them, download the plugin `.zip` and move it to the `Aliucord/plugins
 |PlayableEmbeds fork by Enovale and Omar (renamed to Fluff) makes the embeds work for every site and fixes YouTube embeds.|[Download Fluff](https://github.com/yutaplug/Aliucord/raw/builds/Fluff.zip)|
 |TapTap fork by Rushii adds option to delete messages.|[Download TapTap fork](https://github.com/yutaplug/Aliucord/raw/builds/TapTap.zip)|
 |TextReplace fork by DeafThing removes the character limit.|[Download TextReplace fork](https://github.com/DeafThing/aliucord-pluginsC/raw/builds/TextReplace.zip)|
-|MoreHighlight fork by yuta (renamed to MarkdownFix) fixes empty lines not showing when theres several headers in a row, and link not being blue in subtext.|Download [MarkdownFix](https://github.com/yutaplug/yutaplugins/blob/builds/MarkdownFix.zip)|
+|MoreHighlight fork by yuta (renamed to MarkdownFix) fixes empty lines not showing when theres several headers in a row, and link not being blue in subtext.|[Download MarkdownFix](https://github.com/yutaplug/yutaplugins/blob/builds/MarkdownFix.zip)|
