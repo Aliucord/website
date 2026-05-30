@@ -57,6 +57,7 @@
 |Media channels|[MediaChannelFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/MediaChannelFix.zip)|
 |Media remix|[PhotoEditor](https://github.com/mantikafasi/AliucordPlugins/raw/builds/PhotoEditor.zip)|
 |Onboarding|[FixOnboardingFork](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/FixOnboardingFork.zip)|
+|Compact images|[MosaicFork](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/MosaicFork.zip)|
 
 ## Built-in to Aliucord
 
