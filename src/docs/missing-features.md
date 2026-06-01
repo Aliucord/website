@@ -6,7 +6,6 @@ If a feature isn't here, see the [Backports](/documentation/#backports) page in 
 |-|-|
 |Apps|This means games like `/wordle` (ny times)|
 |Shop|Discord decoration/orbs store|
-|Ignoring users|Ignoring users (blocking without removing as friends)|
 |Super reactions|The fancy reactions that are more annoying than normal ones|
 |E2EE VC|End-to-end encryption in voice chats|
 |Connection info|Steam games count, reddit karma count, etc.|
@@ -15,5 +14,5 @@ If a feature isn't here, see the [Backports](/documentation/#backports) page in 
 |In-game friends|In-game friends|
 |Soundboard|Soundboard in VCs|
 |Security keys|Security key to login|
-|Gradient roles|Roles with fancy styles|
 |Message requests|Message requests|
+|Managing stickers|Managing stickers in server settings|

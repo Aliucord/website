@@ -14,7 +14,8 @@
 |Opening links in Aliucord instead of Discord/browser|[OpenLinksInApp](https://github.com/Canny1913/AliuPlugins/raw/builds/OpenLinksInApp.zip)|
 |Not being able to add friends|[FriendFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/FriendFix.zip)|
 |Not being able to create threads|[ThreadCMD](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/ThreadCMD.zip) (adds a command for it instead)|
-|Forums|[ForumTagFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/ForumTagFix.zip)|
+|Not being able to add tags to forums|[ForumTagFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/ForumTagFix.zip)|
 |Media channels|[MediaChannelFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/MediaChannelFix.zip)|
-|HEIC images |[HeicFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/HeicFix.zip) (converts them to jpg when you send them)|
-|Onboarding|[FixOnboardingFork](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/FixOnboardingFork.zip)|
+|HEIC images|[HeicFix](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/HeicFix.zip) (converts them to jpg when you send them)|
+|Not being able to talk in servers due to onboarding|[FixOnboardingFork](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/FixOnboardingFork.zip)|
+|Audit log and bans sections in server settings|[ServerSettingsFix](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/ServerSettingsFix.zip)|

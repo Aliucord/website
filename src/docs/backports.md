@@ -47,7 +47,6 @@
 |New member badge|[NewMemberBadge](https://github.com/Ushie/Aliucord-Plugins/raw/builds/NewMemberBadge.zip)|
 |Friend nicknames|[NativeFriendNicknames](https://github.com/miaaaa0a/aliucord-plugins/raw/builds/NativeFriendNicknames.zip)|
 |Muting voice channels|[MuteVoiceAndStageChannels](https://github.com/Ushie/Aliucord-Plugins/raw/builds/MuteVoiceAndStageChannels.zip)|
-|Display name styles|[DisplayNameStyles](https://github.com/cillynder/Awoocord/raw/builds/DisplayNameStyles.zip)|
 |Avatar in dm header|[AvatarInHeader](https://github.com/Ushie/Aliucord-Plugins/raw/builds/AvatarInHeader.zip)|
 |Persist message drafts|[PersistMessageDrafts](https://github.com/Ushie/Aliucord-Plugins/raw/builds/PersistMessageDrafts.zip)|
 |Fix attachment limit|[AttachmentLimitFix](https://github.com/Ushie/Aliucord-Plugins/raw/builds/AttachmentLimitFix.zip)|
@@ -58,6 +57,10 @@
 |Media remix|[PhotoEditor](https://github.com/mantikafasi/AliucordPlugins/raw/builds/PhotoEditor.zip)|
 |Onboarding|[FixOnboardingFork](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/FixOnboardingFork.zip)|
 |Compact images|[MosaicFork](https://github.com/tsyqax/aliucord_plugins_tsq/raw/builds/MosaicFork.zip)|
+|Gradient role colors and styled display names|[ModernUserStyles](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/ModernUserStyles.zip)|
+|New icons|[NewIcons](https://github.com/mantikafasi/AliucordPlugins/raw/builds/NewIcons.zip)|
+|Bookmarks/reminders for messages|[MessageBookmarks](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/MessageBookmarks.zip)|
+|Ignoring users|[IgnoreFeature](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/IgnoreFeature.zip)|
 
 ## Built-in to Aliucord
 
