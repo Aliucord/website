@@ -62,6 +62,7 @@
 |Bookmarks/reminders for messages|[MessageBookmarks](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/MessageBookmarks.zip)|
 |Ignoring users|[IgnoreFeature](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/IgnoreFeature.zip)|
 |Message requests|[MessageRequests](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/MessageRequests.zip)|
+|Jump to top in forums|[JumpToTop](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/JumpToTop.zip)|
 
 ## Built-in to Aliucord
 
