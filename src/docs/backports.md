@@ -63,6 +63,7 @@
 |Ignoring users|[IgnoreFeature](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/IgnoreFeature.zip)|
 |Message requests|[MessageRequests](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/MessageRequests.zip)|
 |Jump to top in forums|[JumpToTop](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/JumpToTop.zip)|
+|Auto idle status|[AutoIdle](https://github.com/autodistries/aliucord-plugins/raw/builds/AutoIdle.zip)|
 
 ## Built-in to Aliucord
 
