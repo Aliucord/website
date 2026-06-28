@@ -1,6 +1,12 @@
 This page only shows the most relevant/important changes for most Aliucord users, if you want to see more internal changes that are not that relevant for normal Aliucord users, see the [commits page](https://github.com/Aliucord/Aliucord/commits/main).
 
-## 2.9.5 (CURRENT VERSION)
+## 2.9.7 (CURRENT VERSION)
+- Fix avatars not loading
+
+## 2.9.6
+- Display avatars at correct resolution
+
+## 2.9.5
 - Enable reply button in message actions for poll result messages
 - Fix some memory leak issues caused by faulty base app code
 - Fix animated webp rendering in various places
