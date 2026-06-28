@@ -2,6 +2,7 @@ This page only shows the most relevant/important changes for most Aliucord users
 
 ## 2.9.7 (CURRENT VERSION)
 - Fix avatars not loading
+- Fix crash when clicking on safe mode status
 
 ## 2.9.6
 - Display avatars at correct resolution
