@@ -64,6 +64,9 @@
 |Message requests|[MessageRequests](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/MessageRequests.zip)|
 |Jump to top in forums|[JumpToTop](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/JumpToTop.zip)|
 |Auto idle status|[AutoIdle](https://github.com/autodistries/aliucord-plugins/raw/builds/AutoIdle.zip)|
+|Managing stickers in server settings|[ManageStickers](https://github.com/pilotbellyt-spec/AliucordPlugins/raw/builds/ManageStickers.zip)|
+|Activities V2|[ActivitiesV2](https://github.com/secp192k1/Aliucord-Plugins/raw/builds/ActivitiesV2.zip)|
+|QR login|[QRCodeLogin](https://github.com/secp192k1/Aliucord-Plugins/raw/builds/QRCodeLogin.zip)|
 
 ## Built-in to Aliucord
 
