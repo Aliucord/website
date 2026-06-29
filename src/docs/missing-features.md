@@ -14,4 +14,3 @@ If a feature isn't here, see the [Backports](/documentation/#backports) page in 
 |In-game friends|In-game friends|
 |Soundboard|Soundboard in VCs|
 |Security keys|Security key to login|
-|Managing stickers|Managing stickers in server settings|
