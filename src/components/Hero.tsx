@@ -9,13 +9,10 @@ import MaterialIcon from "./MaterialIcon";
 function M3EButtonWithIcon({ icon, label, href, variant = "filled", size = "medium", target, rel, trailingIcon, style, ...rest }) {
 
 
-  return (
+  const button = (
     <m3e-button
       variant={variant}
       size={size}
-      href={href}
-      target={target}
-      rel={rel}
       style={style}
       {...rest}
     >
@@ -24,6 +21,16 @@ function M3EButtonWithIcon({ icon, label, href, variant = "filled", size = "medi
       {trailingIcon && <m3e-icon slot="trailing-icon">{trailingIcon}</m3e-icon>}
     </m3e-button>
   );
+
+  if (href) {
+    return (
+      <a href={href} target={target} rel={rel} style={{ display: "contents" }}>
+        {button}
+      </a>
+    );
+  }
+
+  return button;
 }
 
 export function Hero() {
