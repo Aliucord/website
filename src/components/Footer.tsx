@@ -21,15 +21,21 @@ export function Footer() {
               </p>
             </div>
             <m3e-button-group aria-label="Footer links" size="medium" variant="connected">
-              <m3e-button as="a" href="https://github.com/Aliucord/documentation" target="_blank" variant="tonal" style={{ fontFamily: 'Roboto, ui-sans-serif, system-ui', fontSize: '1rem', minWidth: 0 }}>
-                Documentation
-              </m3e-button>
-              <m3e-button as="a" href="https://github.com/Aliucord/Aliucord" target="_blank" variant="tonal" style={{ fontFamily: 'Roboto, ui-sans-serif, system-ui', fontSize: '1rem', minWidth: 0, marginLeft: '0.5rem' }}>
-                GitHub
-              </m3e-button>
-              <m3e-button as="a" href="https://discord.gg/EsNDvBaHVU" target="_blank" variant="tonal" style={{ fontFamily: 'Roboto, ui-sans-serif, system-ui', fontSize: '1rem', minWidth: 0, marginLeft: '0.5rem' }}>
-                Support Server
-              </m3e-button>
+              <a href="https://github.com/Aliucord/documentation" target="_blank" rel="noreferrer" style={{ display: 'contents' }}>
+                <m3e-button variant="tonal" style={{ fontFamily: 'Roboto, ui-sans-serif, system-ui', fontSize: '1rem', minWidth: 0 }}>
+                  Documentation
+                </m3e-button>
+              </a>
+              <a href="https://github.com/Aliucord/Aliucord" target="_blank" rel="noreferrer" style={{ display: 'contents' }}>
+                <m3e-button variant="tonal" style={{ fontFamily: 'Roboto, ui-sans-serif, system-ui', fontSize: '1rem', minWidth: 0, marginLeft: '0.5rem' }}>
+                  GitHub
+                </m3e-button>
+              </a>
+              <a href="https://discord.gg/EsNDvBaHVU" target="_blank" rel="noreferrer" style={{ display: 'contents' }}>
+                <m3e-button variant="tonal" style={{ fontFamily: 'Roboto, ui-sans-serif, system-ui', fontSize: '1rem', minWidth: 0, marginLeft: '0.5rem' }}>
+                  Support Server
+                </m3e-button>
+              </a>
             </m3e-button-group>
           </div>
         </div>
