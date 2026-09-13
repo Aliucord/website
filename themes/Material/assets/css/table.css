@@ -1,0 +1,98 @@
+
+/* =========================================
+ *  MATERIAL DESIGN 3: DATA TABLES
+ *  ========================================= */
+
+/* The scrollable wrapper (Crucial for mobile responsiveness) */
+.md-table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: var(--md-sys-shape-corner-medium); /* 12px */
+    border: 1px solid var(--md-sys-color-outline-variant);
+    background-color: var(--md-sys-color-surface-container-low);
+    margin-bottom: 24px;
+}
+
+/* Base table reset */
+table.md-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--md-sys-typescale-font-family);
+    text-align: left;
+}
+
+/* Table Header */
+table.md-table thead th {
+    /* MD3 Label Large */
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+    color: var(--md-sys-color-on-surface-variant);
+
+    /* Layout */
+    padding: 14px 24px;
+    background-color: var(--md-sys-color-surface-container);
+    border-bottom: 1px solid var(--md-sys-color-outline-variant);
+
+    /* Sticky header */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    /* Prevent text wrapping in headers */
+    white-space: nowrap;
+}
+
+/* Table Body Cells */
+table.md-table tbody td {
+    /* MD3 Body Medium */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--md-sys-color-on-surface);
+
+    /* Layout */
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--md-sys-color-outline-variant);
+    vertical-align: middle;
+}
+
+/* Remove bottom border from the very last row */
+table.md-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* MD3 Hover State Layer */
+table.md-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+table.md-table tbody tr:hover {
+    /* Applies a 5% opacity overlay of the text color */
+    background-color: color-mix(in srgb, var(--md-sys-color-on-surface) 5%, transparent);
+}
+
+/* Numeric columns (align right) */
+table.md-table td.numeric,
+table.md-table th.numeric {
+    text-align: right;
+    font-variant-numeric: tabular-nums; /* Aligns numbers perfectly */
+}
+
+/* Action column (for icon buttons) */
+table.md-table td.actions {
+    text-align: right;
+    padding: 8px 16px;
+}
+
+/* Links inside tables */
+table.md-table a {
+    color: var(--md-sys-color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+table.md-table a:hover {
+    text-decoration: underline;
+}

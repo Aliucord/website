@@ -1,0 +1,771 @@
+/* CSS File """"made"""" by Qwen because theres few people who made M3 for Hugo */
+
+/* =========================================
+ *  1. MATERIAL DESIGN 3: DESIGN TOKENS
+ *  ========================================= */
+
+:root {
+  /* MD3 Typography (Unchanged) */
+  --md-sys-typescale-font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, sans-serif;
+
+  /* MD3 Shape (Unchanged) */
+  --md-sys-shape-corner-none: 0px;
+  --md-sys-shape-corner-extra-small: 4px;
+  --md-sys-shape-corner-small: 8px;
+  --md-sys-shape-corner-medium: 12px;
+  --md-sys-shape-corner-large: 16px;
+  --md-sys-shape-corner-extra-large: 28px;
+  --md-sys-shape-corner-full: 1000px;
+
+  /* MD3 Elevation (Unchanged) */
+  --md-sys-elevation-1: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --md-sys-elevation-2: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  --md-sys-elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+
+  /* =========================================
+   *      MD3 GREEN THEME — LIGHT
+   *      ========================================= */
+  --md-sys-color-primary: #386A20;
+  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-primary-container: #B8F397;
+  --md-sys-color-on-primary-container: #042100;
+
+  --md-sys-color-secondary: #55624C;
+  --md-sys-color-on-secondary: #FFFFFF;
+  --md-sys-color-secondary-container: #D8E7CB;
+  --md-sys-color-on-secondary-container: #131F0D;
+
+  --md-sys-color-surface: #FDFDF5;
+  --md-sys-color-on-surface: #1A1C18;
+  --md-sys-color-surface-variant: #DFE4D7;
+  --md-sys-color-on-surface-variant: #43483E;
+
+  --md-sys-color-surface-container-lowest: #FFFFFF;
+  --md-sys-color-surface-container-low: #F7FAF0;
+  --md-sys-color-surface-container: #F1F5EA;
+  --md-sys-color-surface-container-high: #EBEFE4;
+  --md-sys-color-surface-container-highest: #E6E9DE;
+
+  --md-sys-color-outline: #73796D;
+  --md-sys-color-error: #BA1A1A;
+
+  --md-sys-color-outline-variant: rgba(0, 0, 0, 0.12);
+
+  --md-sys-color-inverse-surface: #191D16;
+  --md-sys-color-inverse-on-surface: #EFF2E8;
+  --md-sys-color-inverse-primary: #9DD67D;
+}
+
+/* =========================================
+ *  MD3 GREEN THEME — DARK
+ *  ========================================= */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #9DD67D;
+    --md-sys-color-on-primary: #103900;
+    --md-sys-color-primary-container: #205109;
+    --md-sys-color-on-primary-container: #B8F397;
+
+    --md-sys-color-secondary: #BDCBAF;
+    --md-sys-color-on-secondary: #283420;
+    --md-sys-color-secondary-container: #3E4B35;
+    --md-sys-color-on-secondary-container: #D8E7CB;
+
+    --md-sys-color-surface: #121410;
+    --md-sys-color-on-surface: #E6E9DE;
+    --md-sys-color-surface-variant: #43483E;
+    --md-sys-color-on-surface-variant: #C3C8BB;
+
+    --md-sys-color-surface-container-lowest: #0D0F0B;
+    --md-sys-color-surface-container-low: #1A1C18;
+    --md-sys-color-surface-container: #1E201C;
+    --md-sys-color-surface-container-high: #282B26;
+    --md-sys-color-surface-container-highest: #333630;
+
+    --md-sys-color-outline: #8D9286;
+    --md-sys-color-error: #FFB4AB;
+
+    --md-sys-color-outline-variant: rgba(255, 255, 255, 0.12);
+
+    --md-sys-color-inverse-surface: #E3E3DA;
+    --md-sys-color-inverse-on-surface: #191D16;
+    --md-sys-color-inverse-primary: #386A20;
+  }
+}
+
+/* =========================================
+ *  2. GLOBAL STYLES & TYPOGRAPHY
+ *  ========================================= */
+
+body {
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  font-family: var(--md-sys-typescale-font-family);
+  /* MD3 Body Large */
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+a {
+  color: var(--md-sys-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: none;
+}
+
+a.active {
+  background-color: var(--md-sys-color-secondary-container);
+}
+
+/* =========================================
+ *  3. COMPONENT STYLES (Applying MD3 Tokens)
+ *  ========================================= */
+
+/* =========================================
+ *  MD3 SMALL TOP APP BAR (Leading-aligned)
+ *  ========================================= */
+
+.md-top-app-bar {
+  background-color: var(--md-sys-color-surface-container);
+  /* MD3 uses a 1px outline instead of elevation for the default state */
+  border-bottom: 1px solid var(--md-sys-color-outline-variant, rgba(0,0,0,0.1));
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.md-top-app-bar__icon {
+  width: 24px;
+  margin-right: 8px;
+}
+
+/* The inner row that holds title + actions */
+.md-top-app-bar__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* MD3 standard height for Small Top App Bar is 64px */
+  height: 64px;
+  padding: 0 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* LEFT: Title uses MD3 "Title Large" type scale */
+.md-top-app-bar__title {
+  /* MD3 Title Large: 22px size, 28px line-height, 400 weight */
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin: 0;
+  color: var(--md-sys-color-on-surface);
+}
+
+.md-top-app-bar__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* RIGHT: Navigation actions */
+.md-top-app-bar__actions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px; /* MD3 standard gap between action items */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .md-top-app-bar__row {
+    padding: 0 8px;
+  }
+  .md-top-app-bar__title {
+    display: none;
+  }
+  .md-top-app-bar__actions .md-btn-text {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+
+  .md-top-app-bar__icon {
+    margin: initial;
+    margin-left: 8px;
+  }
+}
+
+.md-top-app-bar__actions .md-btn-text.active {
+  background-color: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+
+  /* Text buttons normally have 12px side padding, but an active pill needs 16px */
+  padding: 10px 16px;
+}
+
+/* Ensure the MD3 hover/press state layer works correctly on the active pill */
+.md-top-app-bar__actions .md-btn-text.active::after {
+  background: var(--md-sys-color-on-secondary-container);
+}
+
+/* =========================================
+ *  MD3 TOP APP BAR: NAV ICON STYLING
+ *  ========================================= */
+
+/* Icon inside a nav text button */
+.md-nav-icon {
+  font-size: 24px; /* Slightly smaller than default 24px to fit in the button */
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* When the button is active, the icon color should match the active text color */
+.md-top-app-bar__actions .md-btn-text.active .md-nav-icon {
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+/* Ensure the icon and text are vertically centered together */
+.md-top-app-bar__actions .md-btn-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 600px) {
+  /* Hide the text label on mobile */
+  .md-top-app-bar__actions .md-btn-text.active {
+    padding: 10px;
+  }
+
+  /* Hide text nodes but keep icons visible */
+  .md-top-app-bar__actions .md-btn-text .md-btn__inner-text {
+    /* font-size: 0; Hides text */
+    display: none; /* actually hides text lol */
+  }
+
+  .md-top-app-bar__actions .md-btn-text .md-nav-icon {
+    font-size: 24px; /* Restore icon size */
+    margin-right: 0;
+  }
+}
+
+/* =========================================
+ *  MATERIAL DESIGN 3: EXPANDABLE SECTIONS (<details>)
+ *  ========================================= */
+
+/* Base details element */
+details.md-details {
+  border-radius: var(--md-sys-shape-corner-medium); /* 12px */
+  overflow: hidden;
+  margin-bottom: 16px;
+  background-color: var(--md-sys-color-surface-container-low);
+  border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+/* Summary (the clickable header) */
+details.md-details > summary {
+  /* MD3 Title Medium Typography */
+  font-family: var(--md-sys-typescale-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+
+  /* Background */
+  background-color: var(--md-sys-color-surface-container);
+  color: var(--md-sys-color-on-surface);
+
+  cursor: pointer;
+  user-select: none;
+  list-style: none; /* Remove default triangle */
+  transition: background-color 0.2s ease;
+}
+
+/* Hide the marker in Safari */
+details.md-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Hover state */
+details.md-details > summary:hover {
+  background-color: color-mix(in srgb, var(--md-sys-color-on-surface) 8%, var(--md-sys-color-surface-container));
+}
+
+/* Focus state for accessibility */
+details.md-details > summary:focus-visible {
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: -2px;
+}
+
+/* Chevron icon (trailing icon) */
+details.md-details > summary::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-left: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2349454F'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: transform 0.2s ease;
+}
+
+/* Rotate chevron when open */
+details.md-details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+/* Content area (revealed when open) */
+details.md-details > *:not(summary) {
+  padding: 16px 24px;
+  color: var(--md-sys-color-on-surface);
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--md-sys-color-surface-container-low);
+  border-top: 1px solid var(--md-sys-color-outline-variant);
+  animation: md-details-expand 0.2s ease-out;
+}
+
+@keyframes md-details-expand {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+ *  ACCORDION VARIANT (Multiple details stacked)
+ *  ========================================= */
+
+.md-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.md-accordion details.md-details {
+  margin-bottom: 0;
+  border-radius: 0;
+  border-bottom: none;
+}
+
+.md-accordion details.md-details:first-child {
+  border-radius: var(--md-sys-shape-corner-medium) var(--md-sys-shape-corner-medium) 0 0;
+}
+
+.md-accordion details.md-details:last-child {
+  border-radius: 0 0 var(--md-sys-shape-corner-medium) var(--md-sys-shape-corner-medium);
+  border-bottom: 1px solid var(--md-sys-color-outline-variant);
+}
+
+/* Dark mode chevron color */
+@media (prefers-color-scheme: dark) {
+  details.md-details > summary::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23CAC4D0'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3C/svg%3E");
+  }
+}
+
+/* =========================================
+ *  MATERIAL DESIGN 3: CARD COMPONENTS
+ *  ========================================= */
+
+/* Base Card Styles (shared by all variants) */
+.md-card {
+  /* MD3 uses surface-container for cards */
+  background-color: var(--md-sys-color-surface-container-low);
+  color: var(--md-sys-color-on-surface);
+
+  /* MD3 Corner Medium (12px) */
+  border-radius: var(--md-sys-shape-corner-medium);
+
+  /* Standard padding */
+  padding: 16px;
+
+  /* Remove default margins */
+  margin: 0;
+
+  /* Typography */
+  font-family: var(--md-sys-typescale-font-family);
+}
+
+/* --- Variant 1: Elevated Card --- */
+/* Best for: Content that needs to stand out, hero content */
+.md-card-elevated {
+  background-color: var(--md-sys-color-surface-container-low);
+  box-shadow: var(--md-sys-elevation-1);
+  transition: box-shadow 0.2s ease;
+}
+
+.md-card-elevated:hover {
+  box-shadow: var(--md-sys-elevation-2);
+}
+
+/* --- Variant 2: Filled Card --- */
+/* Best for: Dense content lists, subtle grouping */
+.md-card-filled {
+  background-color: var(--md-sys-color-surface-container-highest);
+  /* No shadow, no border */
+}
+
+/* --- Variant 3: Outlined Card --- */
+/* Best for: Content-dense interfaces, clear boundaries */
+.md-card-outlined {
+  background-color: var(--md-sys-color-surface);
+  border: 1px solid var(--md-sys-color-outline-variant, rgba(0,0,0,0.12));
+}
+
+/* =========================================
+ *  CARD INTERNAL ELEMENTS
+ *  ========================================= */
+
+.md-card h1 {
+  line-height: 32px;
+}
+
+/* Card Headline (Title) */
+.md-card h2,
+.md-card h3 {
+  /* MD3 Title Large or Headline Small */
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--md-sys-color-on-surface);
+  margin: 0 0 8px 0;
+}
+
+.md-card h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Card Supporting Text (Subtitle, meta info) */
+.md-card .md-card__supporting-text {
+  /* MD3 Body Medium */
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--md-sys-color-on-surface-variant);
+  margin: 0 0 16px 0;
+}
+
+/* Card Content Area */
+.md-card .md-card__content {
+  color: var(--md-sys-color-on-surface-variant);
+  margin-bottom: 16px;
+}
+
+.md-card .md-card__content p {
+  margin: 0 0 12px 0;
+}
+
+.md-card .md-card__content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Card Actions (buttons at the bottom) */
+.md-card__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--md-sys-color-outline-variant, rgba(0,0,0,0.12));
+}
+
+.md-card a {
+  color: var(--md-sys-color-primary);
+  text-decoration: none;
+}
+
+.md-card a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+ *  MD3 FOOTER (Content Pattern)
+ *  ========================================= */
+
+footer {
+  /* MD3 Surface Container Low */
+  background-color: var(--md-sys-color-surface-container-low);
+  color: var(--md-sys-color-on-surface-variant);
+
+  /* MD3 spacing (multiples of 8px) */
+  padding: 32px 24px;
+  margin-top: 48px;
+
+  /* Subtle top border using outline-variant */
+  border-top: 1px solid var(--md-sys-color-outline-variant);
+
+  /* Typography */
+  font-family: var(--md-sys-typescale-font-family);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Footer content wrapper */
+footer .md-footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Footer section headings */
+footer h3,
+footer h4 {
+  /* MD3 Label Medium */
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--md-sys-color-on-surface);
+  margin: 0 0 12px 0;
+}
+
+/* Footer links */
+footer a {
+  color: var(--md-sys-color-on-surface-variant);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--md-sys-color-primary);
+  text-decoration: underline;
+}
+
+/* Footer link lists */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Footer multi-column layout */
+footer .md-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+}
+
+/* Copyright text (bottom of footer) */
+footer .md-footer-copyright {
+  /* MD3 Body Small */
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--md-sys-color-on-surface-variant);
+  text-align: center;
+  padding-top: 24px;
+  border-top: 1px solid var(--md-sys-color-outline-variant);
+  margin-top: 24px;
+}
+
+/* Social icons in footer */
+footer .md-footer-social {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+footer .md-footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+footer .md-footer-social a:hover {
+  background-color: var(--md-sys-color-surface-variant);
+  text-decoration: none;
+}
+
+footer .md-footer-social .material-symbols-outlined {
+  font-size: 20px;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  footer {
+    padding: 24px 16px;
+  }
+
+  footer .md-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+/* =========================================
+ *  4. MATERIAL DESIGN 3: BUTTONS
+ *  ========================================= */
+
+/* Base Button Styles */
+.md-btn {
+  /* MD3 Label Large Typography */
+  font-family: var(--md-sys-typescale-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+
+  /* Layout & Shape */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  min-width: 48px;
+  height: 40px;
+  border-radius: var(--md-sys-shape-corner-full); /* 20px */
+  border: none;
+  outline: none;
+  text-decoration: none;
+
+  /* Consistent size */
+  box-sizing: border-box;
+
+  /* Interaction */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; /* Required for the state layer effect */
+  transition: box-shadow 0.2s ease;
+}
+
+/* MD3 State Layer (The hover/press ripple effect) */
+.md-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* Covers the whole button */
+  border-radius: inherit;
+  background: currentColor; /* Inherits the text color */
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none; /* Allows clicks to pass through to the button */
+}
+
+.md-btn:hover::after { opacity: 0.08; }
+.md-btn:focus-visible::after { opacity: 0.1; }
+.md-btn:active::after { opacity: 0.12; }
+
+/* Disabled State (Universal for all buttons) */
+.md-btn:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+@media (prefers-color-scheme: light) {
+  .md-btn:disabled { background-color: rgba(0,0,0,0.12) !important; color: rgba(0,0,0,0.38) !important; border-color: rgba(0,0,0,0.12) !important; }
+}
+@media (prefers-color-scheme: dark) {
+  .md-btn:disabled { background-color: rgba(255,255,255,0.12) !important; color: rgba(255,255,255,0.38) !important; border-color: rgba(255,255,255,0.12) !important; }
+}
+
+
+/* 1. Filled Button (High Emphasis) */
+.md-btn-filled {
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+
+/* 2. Filled Tonal Button (Medium-High Emphasis) */
+.md-btn-tonal {
+  background-color: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+/* 3. Outlined Button (Medium Emphasis) */
+.md-btn-outlined {
+  background-color: transparent;
+  color: var(--md-sys-color-primary);
+  border: 1px solid var(--md-sys-color-outline);
+}
+
+/* 4. Elevated Button (Medium Emphasis, stands out from surface) */
+.md-btn-elevated {
+  background-color: var(--md-sys-color-surface-container-low);
+  color: var(--md-sys-color-primary);
+  box-shadow: var(--md-sys-elevation-1);
+}
+.md-btn-elevated:hover {
+  box-shadow: var(--md-sys-elevation-2);
+}
+
+/* 5. Text Button (Low Emphasis) */
+.md-btn-text {
+  background-color: transparent;
+  color: var(--md-sys-color-primary);
+  padding: 10px 12px; /* Text buttons have less horizontal padding */
+}
+
+/* =========================================
+ *  MD3 MASONRY GRID (Variable Height Cards)
+ *  ========================================= */
+
+.md-masonry {
+  /* CSS Columns creates the masonry effect */
+  column-count: 2; /* Default: 3 columns on desktop */
+  column-gap: 16px; /* MD3 standard gap */
+
+  /* Prevent columns from breaking awkwardly */
+  orphans: 1;
+  widows: 1;
+  overflow: clip;
+}
+
+/* Each card in the masonry */
+.md-masonry > * {
+  /* Prevent cards from breaking across columns */
+  break-inside: avoid;
+  page-break-inside: avoid;
+  overflow-wrap: anywhere;
+
+  /* Add bottom margin for vertical spacing */
+  margin-bottom: 16px;
+
+  /* Cards are block-level in column flow */
+  display: block;
+}
+
+/* Responsive breakpoints */
+/* Medium screens: 2 columns */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .md-masonry {
+    column-count: 2;
+  }
+}
+
+/* Small screens: 1 column */
+@media (max-width: 599px) {
+  .md-masonry {
+    column-count: 1;
+  }
+}

@@ -1,1 +1,0 @@
-The theme development documentation has moved to GitHub. You can find it here: [Aliucord Documentation - Theme Dev](https://github.com/Aliucord/documentation/tree/main/theme-dev)

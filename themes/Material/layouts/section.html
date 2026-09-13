@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <h2 style="font-size: 28px; margin-bottom: 24px;">{{ .Title }}</h2>
+
+    <div class="md-masonry">
+        {{ range .Pages }}
+        <article class="md-card md-card-filled">
+            <h1>{{ .Title }}</h1>
+
+            <div class="md-card__content">
+                {{ .Content }}
+            </div>
+        </article>
+        {{ end }}
+    </div>
+{{ end }}

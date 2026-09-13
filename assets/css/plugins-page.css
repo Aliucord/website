@@ -1,0 +1,395 @@
+/* =========================================
+ *  MATERIAL DESIGN 3: TEXT FIELDS
+ *  ========================================= */
+
+/* Base wrapper for all text fields */
+.md-text-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    font-family: var(--md-sys-typescale-font-family);
+}
+
+/* The actual input element */
+.md-text-field input,
+.md-text-field textarea {
+    /* MD3 Body Large Typography */
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+
+    /* Layout */
+    width: 100%;
+    padding: 20px 16px 8px 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--md-sys-color-on-surface);
+
+    /* Remove default browser styles */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.md-text-field textarea {
+    min-height: 100px;
+    resize: vertical;
+    padding-top: 24px;
+}
+
+/* Floating Label */
+.md-text-field label {
+    position: absolute;
+    left: 16px;
+    top: 15px;
+
+    /* MD3 Body Large (default state) */
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--md-sys-color-on-surface-variant);
+
+    pointer-events: none;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: left top;
+}
+
+/* Label floats up when input is focused or has content */
+.md-text-field input:focus ~ label,
+.md-text-field input:not(:placeholder-shown) ~ label,
+.md-text-field textarea:focus ~ label,
+.md-text-field textarea:not(:placeholder-shown) ~ label {
+    /* MD3 Body Small (floated state) */
+    font-size: 12px;
+    line-height: 16px;
+    top: 8px;
+    color: var(--md-sys-color-primary);
+}
+
+/* Supporting Text (helper text below) */
+.md-text-field__supporting-text {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--md-sys-color-on-surface-variant);
+    padding: 4px 16px 0 16px;
+    margin: 0;
+}
+
+/* Character Counter */
+.md-text-field__counter {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--md-sys-color-on-surface-variant);
+    padding: 4px 16px 0 0;
+    margin-left: auto;
+}
+
+/* =========================================
+ *  VARIANT 1: FILLED TEXT FIELD
+ *  ========================================= */
+
+.md-text-field-filled input,
+.md-text-field-filled textarea {
+    background-color: var(--md-sys-color-surface-variant);
+    border-radius: 4px 4px 0 0;
+}
+
+/* Bottom border (idle state) */
+.md-text-field-filled::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--md-sys-color-on-surface-variant);
+    opacity: 0.5;
+    transition: height 0.2s, background-color 0.2s;
+}
+
+/* Active indicator (focused state) */
+.md-text-field-filled input:focus ~ .md-text-field__indicator,
+.md-text-field-filled textarea:focus ~ .md-text-field__indicator {
+    height: 2px;
+    background-color: var(--md-sys-color-primary);
+}
+
+.md-text-field__indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--md-sys-color-on-surface-variant);
+    transition: height 0.2s, background-color 0.2s;
+}
+
+/* Hover state */
+.md-text-field-filled:hover input,
+.md-text-field-filled:hover textarea {
+    background-color: color-mix(in srgb, var(--md-sys-color-surface-variant) 92%, var(--md-sys-color-on-surface));
+}
+
+/* =========================================
+ *  VARIANT 2: OUTLINED TEXT FIELD
+ *  ========================================= */
+
+.md-text-field-outlined {
+    position: relative;
+}
+
+.md-text-field-outlined input,
+.md-text-field-outlined textarea {
+    padding: 16px;
+    border: 1px solid var(--md-sys-color-outline);
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.md-text-field-outlined label {
+    top: 16px;
+    left: 12px;
+    padding: 0 4px;
+    background-color: transparent;
+}
+
+/* Label floats up and cuts into the border */
+.md-text-field-outlined input:focus ~ label,
+.md-text-field-outlined input:not(:placeholder-shown) ~ label,
+.md-text-field-outlined textarea:focus ~ label,
+.md-text-field-outlined textarea:not(:placeholder-shown) ~ label {
+    top: -8px;
+    left: 12px;
+    font-size: 12px;
+    background-color: var(--md-sys-color-surface);
+    color: var(--md-sys-color-primary);
+}
+
+/* Focused border */
+.md-text-field-outlined input:focus,
+.md-text-field-outlined textarea:focus {
+    border-color: var(--md-sys-color-primary);
+    border-width: 2px;
+    padding: 15px; /* Compensate for thicker border */
+}
+
+/* Hover state */
+.md-text-field-outlined:hover input,
+.md-text-field-outlined:hover textarea {
+    border-color: var(--md-sys-color-on-surface);
+}
+
+/* =========================================
+ *  VARIANT 3: SEARCH FIELD
+ *  ========================================= */
+
+.md-search-field {
+    position: relative;
+}
+
+.md-search-field input {
+    padding-left: 48px; /* Space for search icon */
+    border-radius: var(--md-sys-shape-corner-full);
+    background-color: var(--md-sys-color-surface-container-high);
+}
+
+/* Search icon (leading icon) */
+.md-search-field__icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--md-sys-color-on-surface-variant);
+    pointer-events: none;
+}
+
+.md-search-field label {
+    left: 48px;
+}
+
+/* Clear button (trailing icon) */
+.md-search-field__clear {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    color: var(--md-sys-color-on-surface-variant);
+    cursor: pointer;
+    border-radius: 50%;
+    display: none; /* Hidden by default */
+}
+
+.md-search-field input:not(:placeholder-shown) ~ .md-search-field__clear {
+    display: block;
+}
+
+.md-search-field__clear:hover {
+    background-color: var(--md-sys-color-surface-variant);
+}
+
+/* =========================================
+ *  ICONS (Leading & Trailing)
+ *  ========================================= */
+
+/* Leading icon (inside the input) */
+.md-text-field__leading-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--md-sys-color-on-surface-variant);
+    pointer-events: none;
+}
+
+/* Trailing icon (inside the input) */
+.md-text-field__trailing-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--md-sys-color-on-surface-variant);
+    cursor: pointer;
+}
+
+/* Adjust padding when icons are present */
+.md-text-field--has-leading-icon input,
+.md-text-field--has-leading-icon textarea {
+    padding-left: 48px;
+}
+
+.md-text-field--has-trailing-icon input,
+.md-text-field--has-trailing-icon textarea {
+    padding-right: 48px;
+}
+
+.md-text-field--has-leading-icon label {
+    left: 48px;
+}
+
+/* =========================================
+ *  ERROR STATE
+ *  ========================================= */
+
+.md-text-field--error input,
+.md-text-field--error textarea {
+    color: var(--md-sys-color-error);
+}
+
+.md-text-field--error label {
+    color: var(--md-sys-color-error);
+}
+
+.md-text-field--error .md-text-field__indicator,
+.md-text-field--error .md-text-field__supporting-text {
+    color: var(--md-sys-color-error);
+}
+
+.md-text-field-filled.md-text-field--error::after {
+    background-color: var(--md-sys-color-error);
+}
+
+.md-text-field-outlined.md-text-field--error input,
+.md-text-field-outlined.md-text-field--error textarea {
+    border-color: var(--md-sys-color-error);
+}
+
+/* =========================================
+ *  DISABLED STATE
+ *  ========================================= */
+
+.md-text-field--disabled input,
+.md-text-field--disabled textarea {
+    color: var(--md-sys-color-on-surface);
+    opacity: 0.38;
+    cursor: not-allowed;
+}
+
+.md-text-field--disabled label {
+    color: var(--md-sys-color-on-surface);
+    opacity: 0.38;
+}
+
+.md-text-field-filled.md-text-field--disabled input,
+.md-text-field-filled.md-text-field--disabled textarea {
+    background-color: var(--md-sys-color-on-surface);
+    opacity: 0.04;
+}
+
+.md-text-field-outlined.md-text-field--disabled input,
+.md-text-field-outlined.md-text-field--disabled textarea {
+    border-color: var(--md-sys-color-on-surface);
+    opacity: 0.12;
+}
+
+/* =========================================
+ *  PREFIX & SUFFIX TEXT
+ *  ========================================= */
+
+.md-text-field__prefix,
+.md-text-field__suffix {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--md-sys-color-on-surface-variant);
+    pointer-events: none;
+}
+
+.md-text-field__prefix {
+    left: 16px;
+}
+
+.md-text-field__suffix {
+    right: 16px;
+}
+
+.md-text-field--has-prefix input {
+    padding-left: 48px;
+}
+
+.md-text-field--has-suffix input {
+    padding-right: 48px;
+}
+
+/* =====================================
+ * PLUGINS PAGE SPECIFIC STYLE
+ * ===================================== */
+
+body.plugins main {
+    max-width: initial;
+    width: 80%
+}
+
+body.plugins article {
+    overflow-wrap: break-word;
+}
+
+@media (min-width: 1024px) {
+    body.plugins .md-masonry {
+        column-count: 3;
+    }
+}
+
+body.plugins #plugin-search::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    position: absolute;
+}
+
+body.plugins .md-search-field {
+    max-width: 30em;
+    margin: auto;
+    margin-bottom: 16px;
+}
+

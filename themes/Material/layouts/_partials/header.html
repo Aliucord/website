@@ -1,0 +1,33 @@
+<header class="md-top-app-bar">
+    <div class="md-top-app-bar__row">
+
+        <div>
+            <a style="display:flex;flex-direction: row; align-content: center;" href="/">
+                <img class="md-top-app-bar__icon" src="/images/aliucord.svg" alt="The Aliucord Icon.">
+                <h1 class="md-top-app-bar__title">
+                    {{ .Site.Title }}
+                </h1>
+            </a>
+        </div>
+
+        <nav class="md-top-app-bar__actions">
+            <ul>
+                {{ $currentPage := . }}
+
+                {{ range .Site.Menus.main }}
+                    {{ $isActive := $currentPage.IsMenuCurrent "main" . }}
+
+                    <li>
+                        <a href="{{ .URL }}" class="md-btn md-btn-text {{ if $isActive }}active{{ end }}">
+                            {{ with .Params.icon }}
+                                <span class="material-symbols-outlined md-nav-icon">{{ . }}</span>
+                            {{ end }}
+                            <p class="md-btn__inner-text">{{ .Name }}</p>
+                        </a>
+                    </li>
+                {{ end }}
+            </ul>
+        </nav>
+
+    </div>
+</header>

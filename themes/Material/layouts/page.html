@@ -1,0 +1,8 @@
+{{ define "main" }}
+
+  <article class="md-card md-card-elevated">
+    <h1>{{ .Title }}</h1>
+    <div class="md-card__content">{{ .Content }}</div>
+  </article>
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}

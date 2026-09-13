@@ -1,0 +1,30 @@
+<div class="md-table-container">
+<table class="md-table">
+    <thead>
+        {{ range .THead }}
+            <tr>
+                {{ range . }}
+                    <th
+                        {{- with .Alignment }} class="{{ if eq . "right" }}numeric{{ else }}{{ . }}{{ end }}"{{ end -}}
+                    >
+                        {{- .Text | safeHTML -}}
+                    </th>
+                {{ end }}
+            </tr>
+        {{ end }}
+    </thead>
+    <tbody>
+        {{ range .TBody }}
+            <tr>
+                {{ range . }}
+                    <td
+                        {{- with .Alignment }} class="{{ if eq . "right" }}numeric{{ else }}{{ . }}{{ end }}"{{ end -}}
+                    >
+                        {{- .Text | safeHTML -}}
+                    </td>
+                {{ end }}
+            </tr>
+        {{ end }}
+    </tbody>
+</table>
+</div>

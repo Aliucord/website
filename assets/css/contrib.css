@@ -1,0 +1,343 @@
+
+/* =========================================
+ *  MATERIAL DESIGN 3: TOOLTIPS
+ *  ========================================= */
+
+/* Tooltip container (positioned absolutely) */
+.md-tooltip {
+    position: absolute;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease, visibility 0.15s ease;
+}
+
+.md-tooltip.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Tooltip content box */
+.md-tooltip__content {
+    /* MD3 Inverse Surface (dark background for light text) */
+    background-color: var(--md-sys-color-inverse-surface, #313033);
+    color: var(--md-sys-color-inverse-on-surface, #F4EFF4);
+
+    /* MD3 Corner Extra Small (4px) */
+    border-radius: var(--md-sys-shape-corner-extra-small);
+
+    /* MD3 Elevation 2 */
+    box-shadow: var(--md-sys-elevation-2);
+
+    /* Padding */
+    padding: 6px 12px;
+
+    /* Typography (Label Medium) */
+    font-family: var(--md-sys-typescale-font-family);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    /* Prevent text wrapping */
+    white-space: nowrap;
+    max-width: 300px;
+}
+
+/* Rich tooltip (with more content) */
+.md-tooltip__content--rich {
+    white-space: normal;
+    padding: 12px 16px;
+    max-width: 280px;
+}
+
+/* Rich tooltip with icon */
+.md-tooltip__content--rich .md-tooltip__icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.md-tooltip__content--rich .md-tooltip__icon .material-symbols-outlined {
+    font-size: 20px;
+    color: var(--md-sys-color-inverse-primary, #D0BCFF);
+}
+
+/* Rich tooltip title */
+.md-tooltip__content--rich .md-tooltip__title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+/* Rich tooltip body */
+.md-tooltip__content--rich .md-tooltip__body {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    opacity: 0.9;
+}
+
+/* Arrow (optional, points to the target) */
+.md-tooltip__arrow {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--md-sys-color-inverse-surface, #313033);
+    transform: rotate(45deg);
+}
+
+/* Arrow positions */
+.md-tooltip[data-placement="top"] .md-tooltip__arrow {
+    bottom: -4px;
+    left: 50%;
+    margin-left: -4px;
+}
+
+.md-tooltip[data-placement="bottom"] .md-tooltip__arrow {
+    top: -4px;
+    left: 50%;
+    margin-left: -4px;
+}
+
+.md-tooltip[data-placement="left"] .md-tooltip__arrow {
+    right: -4px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+.md-tooltip[data-placement="right"] .md-tooltip__arrow {
+    left: -4px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+    .md-tooltip__content {
+        background-color: var(--md-sys-color-inverse-surface, #E6E0E9);
+        color: var(--md-sys-color-inverse-on-surface, #313033);
+    }
+
+    .md-tooltip__arrow {
+        background-color: var(--md-sys-color-inverse-surface, #E6E0E9);
+    }
+}
+
+body.contrib main {
+    overflow-x: hidden;
+}
+
+.contrib-cloud {
+    position: relative;
+    width: 500px;
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+/* Rotating container (holds all images) */
+.cloud-rotator {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.cloud-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -48px 0 0 -48px;
+}
+
+.cloud-child.orbit1 {
+    animation: orbit 20s linear infinite;
+}
+
+.cloud-child.orbit2 {
+    animation: orbit2 25s linear infinite;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+}
+
+.cloud-child.orbit3 {
+    animation: orbit3 30s linear infinite;
+    width: 48px;
+    height: 48px;
+    margin: -24px 0 0 -24px;
+}
+
+.cloud-child.orbit4 {
+    animation: orbit4 30s linear infinite;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -16px;
+}
+
+.o1:hover .cloud-child.orbit1,
+.o2:hover .cloud-child.orbit2,
+.o3:hover .cloud-child.orbit3,
+.o4:hover .cloud-child.orbit4 {
+    animation-play-state: paused;
+}
+
+.cloud-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+    /* Counter-rotation to keep images upright */
+    animation: counter-orbit 20s linear infinite;
+}
+
+/* Orbit animation: rotates around the center */
+@keyframes orbit {
+    from {
+        transform: rotate(calc(var(--i) * (360deg / var(--total)))) translateX(120px);
+    }
+    to {
+        transform: rotate(calc(var(--i) * (360deg / var(--total)) + 360deg)) translateX(120px);
+    }
+}
+
+@keyframes orbit2 {
+    from {
+        transform: rotate(calc(var(--i) * (360deg / var(--total)))) translateX(240px);
+    }
+    to {
+        transform: rotate(calc(var(--i) * (360deg / var(--total)) + 360deg)) translateX(240px);
+    }
+}
+
+@keyframes orbit3 {
+    from {
+        transform: rotate(calc(var(--i) * (360deg / var(--total)))) translateX(340px);
+    }
+    to {
+        transform: rotate(calc(var(--i) * (360deg / var(--total)) + 360deg)) translateX(340px);
+    }
+}
+
+@keyframes orbit4 {
+    from {
+        transform: rotate(calc(var(--i) * (360deg / var(--total)))) translateX(440px);
+    }
+    to {
+        transform: rotate(calc(var(--i) * (360deg / var(--total)) + 360deg)) translateX(440px);
+    }
+}
+
+/* Counter-rotation: keeps images upright as they orbit */
+@keyframes counter-orbit {
+    from {
+        transform: rotate(calc(var(--i) * -(360deg / var(--total))));
+    }
+    to {
+        transform: rotate(calc(var(--i) * -(360deg / var(--total)) - 360deg));
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body.contrib main {
+        padding: 0;
+        height: 300px;
+        overflow-y: hidden;
+    }
+    body.contrib h1 {
+        padding: 16px;
+        position: relative;
+        z-index: 3;
+    }
+    body.contrib .square {
+        padding: 48px 16px;
+        position: relative;
+        top: 220px;
+        z-index: 3;
+        background-color: var(--md-sys-color-surface);
+    }
+    body.contrib .md-card__content {
+        position: relative;
+        bottom: 320px;
+        z-index: 0;
+    }
+    .contrib-cloud {
+        max-width: 320px;
+        height: 450px;
+    }
+
+    .cloud-rotator {
+        width: 32px;
+        height: 32px;
+    }
+
+    .cloud-child {
+        width: 40px;
+        height: 40px;
+        margin: -20px 0 0 -20px;
+    }
+
+    .cloud-child.orbit2 {
+        width: 32px;
+        height: 32px;
+        margin: -16px 0 0 -16px;
+    }
+
+    .cloud-child.orbit3 {
+        width: 24px;
+        height: 24px;
+        margin: -12px 0 0 -12px;
+    }
+
+    .cloud-child.orbit4 {
+        width: 16px;
+        height: 16px;
+        margin: -8px 0 0 -8px;
+    }
+
+    @keyframes orbit {
+        from {
+            transform: rotate(calc(var(--i) * (360deg / var(--total)))) translateX(60px);
+        }
+        to {
+            transform: rotate(calc(var(--i) * (360deg / var(--total)) + 360deg)) translateX(60px);
+        }
+    }
+    @keyframes orbit2 {
+        from {
+            transform: rotate(calc(var(--i) * (360deg / var(--total)))) translateX(110px);
+        }
+        to {
+            transform: rotate(calc(var(--i) * (360deg / var(--total)) + 360deg)) translateX(110px);
+        }
+    }
+    @keyframes orbit3 {
+        from {
+            transform: rotate(calc(var(--i) * (360deg / var(--total)))) translateX(150px);
+        }
+        to {
+            transform: rotate(calc(var(--i) * (360deg / var(--total)) + 360deg)) translateX(150px);
+        }
+    }
+    @keyframes orbit4 {
+        from {
+            transform: rotate(calc(var(--i) * (360deg / var(--total)))) translateX(190px);
+        }
+        to {
+            transform: rotate(calc(var(--i) * (360deg / var(--total)) + 360deg)) translateX(190px);
+        }
+    }
+}

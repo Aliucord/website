@@ -1,31 +1,3 @@
-# Node modules
-node_modules/
-
-# Build output
-dist/
-build/
-static/
-.astro/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Env files
-.env
-.env.*
-
-# TypeScript
-*.tsbuildinfo
-
-# VSCode
-.vscode/
-
-# Misc
-*.local
-scripts/
+public/
+*.kate-swp
+.hugo_build.lock

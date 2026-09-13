@@ -1,0 +1,32 @@
+locale = 'en-us'
+theme = 'Material'
+title = 'Aliucord'
+enableRobotsTXT = true
+
+[security]
+    allowContent = ['^text/html$', '^text/markdown$']
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe=true
+
+[menus]
+    [[menus.main]]
+        name = 'Plugins'
+        pageRef = '/plugins'
+        weight = 2
+            [menus.main.params]
+                icon = 'extension'
+    [[menus.main]]
+        name = 'Themes'
+        pageRef = '/themes'
+        weight = 3
+            [menus.main.params]
+                icon = 'format_paint'
+    [[menus.main]]
+        name = 'Guides'
+        pageRef = '/docs'
+        weight = 4
+            [menus.main.params]
+                icon = 'developer_guide'

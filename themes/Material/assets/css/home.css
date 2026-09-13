@@ -1,0 +1,309 @@
+/* ========================================
+ * HOME PAGE STYLING
+ * ======================================== */
+
+.features-side-page {
+    text-align: initial;
+    flex: 2;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+}
+
+.features-side-page span {
+    margin-right: 8px;
+}
+
+.home-side-page {
+    flex: 1;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+}
+
+.main-page-buttons > a {
+    margin: 8px;
+}
+
+.main-page-buttons span {
+    margin-right: 8px;
+}
+
+.span-h1 {
+    font-size: 32px;
+}
+
+.home-page {
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    align-items: center;
+}
+
+svg {
+    margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+    .features-side-page {
+        width: initial;
+        margin-top: 16px;
+    }
+    .home-page {
+        flex-direction: column;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+}
+
+/* =========================================
+ *  MATERIAL DESIGN 3: IMAGE CAROUSEL (Adaptive)
+ *  ========================================= */
+
+.md-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--md-sys-color-surface-container);
+    border-radius: var(--md-sys-shape-corner-large);
+    overflow: hidden;
+    box-shadow: var(--md-sys-elevation-1);
+}
+
+/* Viewport - height will be set dynamically by JavaScript */
+.md-carousel__viewport {
+    overflow: hidden;
+    width: 100%;
+    /* Height set by JS */
+    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Track - holds all slides side by side */
+.md-carousel__track {
+    display: flex;
+    /* Height set by JS */
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Individual slide - takes full viewport width */
+.md-carousel__slide {
+    flex: 0 0 100%;
+    width: 100%;
+    /* Height set by JS */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--md-sys-color-surface-container-high);
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+/* Images display at natural size, constrained only by viewport */
+.md-carousel__slide img {
+    max-width: 100%;
+    max-height: 80vh; /* Only constraint to prevent too-tall images */
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.md-carousel__slide picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation buttons */
+.md-carousel__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--md-sys-color-surface-container-highest);
+    color: var(--md-sys-color-on-surface);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--md-sys-elevation-2);
+    transition: background-color 0.2s, box-shadow 0.2s;
+    z-index: 10;
+}
+
+.md-carousel__nav:hover {
+    box-shadow: var(--md-sys-elevation-3);
+}
+
+.md-carousel__nav--prev {
+    left: 16px;
+}
+
+.md-carousel__nav--next {
+    right: 16px;
+}
+
+.md-carousel__nav .material-symbols-outlined {
+    font-size: 24px;
+}
+
+/* Indicator dots */
+.md-carousel__indicators {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.md-carousel__indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--md-sys-color-on-surface);
+    opacity: 0.3;
+    cursor: pointer;
+    transition: opacity 0.2s, width 0.2s;
+    padding: 0;
+}
+
+.md-carousel__indicator.active {
+    opacity: 1;
+    background-color: var(--md-sys-color-primary);
+    width: 24px;
+    border-radius: 4px;
+}
+
+/* =========================================
+ *  LIGHTBOX (Pop-out Modal)
+ *  ========================================= */
+
+.md-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.md-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.md-lightbox__backdrop {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Lightbox content - constrains the carousel */
+.md-lightbox__content {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    max-height: 90vh;
+    background-color: var(--md-sys-color-surface-container-highest);
+    border-radius: var(--md-sys-shape-corner-extra-large);
+    box-shadow: var(--md-sys-elevation-3);
+    overflow: hidden;
+    transform: scale(0.9);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.md-lightbox.active .md-lightbox__content {
+    transform: scale(1);
+}
+
+.md-lightbox__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.md-lightbox__close:hover {
+    background-color: var(--md-sys-color-surface-variant);
+}
+
+/* Lightbox carousel - images at natural size, constrained by lightbox */
+.md-lightbox .md-carousel {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.md-lightbox .md-carousel__viewport {
+    max-height: calc(90vh - 48px); /* Account for padding */
+}
+
+.md-lightbox .md-carousel__slide {
+    padding: 24px;
+}
+
+.md-lightbox .md-carousel__slide img {
+    max-height: calc(90vh - 96px); /* More padding for lightbox */
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .md-lightbox__content {
+        width: 95%;
+        max-height: 95vh;
+    }
+
+    .md-carousel__nav {
+        width: 40px;
+        height: 40px;
+    }
+
+    .md-carousel__nav--prev {
+        left: 8px;
+    }
+
+    .md-carousel__nav--next {
+        right: 8px;
+    }
+
+    .md-lightbox .md-carousel__slide {
+        padding: 8px;
+    }
+
+    .md-lightbox .md-carousel__slide img {
+        max-height: calc(95vh - 48px);
+    }
+}
